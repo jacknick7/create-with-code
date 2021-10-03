@@ -5,6 +5,7 @@ using UnityEngine;
 public class ChangeCamera : MonoBehaviour
 {
     public GameObject outsideCamera, insideCamera;
+    public KeyCode key;
 
     // Start is called before the first frame update
     void Start()
@@ -15,7 +16,7 @@ public class ChangeCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.C))
+        if (Input.GetKeyDown(key))
         {
             if (outsideCamera.activeSelf)
             {
