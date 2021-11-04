@@ -478,9 +478,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe6fffadc88aee149bc995cc966e78e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontalInput: 0
-  speed: 10
-  xRange: 10
   projectilePrefab: {fileID: 8861686199763303980, guid: ad90d0f175f0a194babac9f9722ae05c, type: 3}
 --- !u!1 &992285705
 GameObject:
@@ -540,7 +537,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 610afbb40c4385d42aa33adfe3531f0a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 610afbb40c4385d42aa33adfe3531f0a, type: 3}
       propertyPath: m_LocalRotation.w
