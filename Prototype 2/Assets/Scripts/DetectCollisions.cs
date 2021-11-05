@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class DetectCollisions : MonoBehaviour
 {
+    private UserInterface userInterface;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        userInterface = GameObject.Find("/UserInterface").GetComponent<UserInterface>();
     }
 
     // Update is called once per frame
@@ -18,7 +20,16 @@ public class DetectCollisions : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Destroy(gameObject);
-        Destroy(other.gameObject);
+        if (other.name == "Player")
+        {
+            // Debug.Log("Game Over!");
+            userInterface.UpdateLives();
+        }
+        else
+        {
+            Destroy(gameObject);
+            Destroy(other.gameObject);
+            userInterface.UpdateScore();
+        }
     }
 }
