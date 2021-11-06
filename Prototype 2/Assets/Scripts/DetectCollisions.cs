@@ -27,9 +27,10 @@ public class DetectCollisions : MonoBehaviour
         }
         else
         {
-            Destroy(gameObject);
+            GetComponent<AnimalHunger>().FeedAnimal(1);
+            // Destroy(gameObject);
             Destroy(other.gameObject);
-            userInterface.UpdateScore();
+            // userInterface.UpdateScore();
         }
     }
 }
