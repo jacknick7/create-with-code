@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     public float jumpForce;
     public float gravityModifier;
     public bool isOnGround = true;
+    public bool isDoubleJump = false;
 
     public bool gameOver = false;
 
@@ -37,15 +38,23 @@ public class PlayerController : MonoBehaviour
             dirtParticle.Stop();
             playerAudio.PlayOneShot(jumpSound, 1.0f);
         }
+        else if (Input.GetKeyDown(KeyCode.Space) && !isOnGround && !isDoubleJump && !gameOver)
+        {
+            playerRb.AddForce(Vector3.up * jumpForce / 2, ForceMode.Impulse);
+            playerAnim.SetTrigger("Jump_trig");
+            isDoubleJump = true;
+            playerAudio.PlayOneShot(jumpSound, 1.0f);
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Ground"))
+        if (collision.gameObject.CompareTag("Ground") && !gameOver)
         {
             isOnGround = true;
+            isDoubleJump = false;
             dirtParticle.Play();
-        } else if (collision.gameObject.CompareTag("Obstacle"))
+        } else if (collision.gameObject.CompareTag("Obstacle") && !gameOver)
         {
             gameOver = true;
             Debug.Log("Game Over!");
