@@ -30,6 +30,14 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            playerAnim.speed = 3;
+        }
+        else if (Input.GetKeyUp(KeyCode.D))
+        {
+            playerAnim.speed = 1.5f;
+        }
         if (Input.GetKeyDown(KeyCode.Space) && isOnGround && !gameOver)
         {
             playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);

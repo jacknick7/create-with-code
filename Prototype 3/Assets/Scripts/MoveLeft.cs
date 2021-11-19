@@ -6,7 +6,8 @@ public class MoveLeft : MonoBehaviour
 {
     private float speed = 30;
     private PlayerController playerControllerScript;
-    private float leftBound = -15; 
+    private float leftBound = -15;
+    public float dashSpeedMultiplier = 2;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +20,12 @@ public class MoveLeft : MonoBehaviour
     {
         if (playerControllerScript.gameOver == false)
         {
-            transform.Translate(Vector3.left * Time.deltaTime * speed);
+            float speedMultiplier = 1;
+            if (Input.GetKey(KeyCode.D))
+            {
+                speedMultiplier = dashSpeedMultiplier;
+            }
+            transform.Translate(Vector3.left * Time.deltaTime * speed * speedMultiplier);
         }
         if (transform.position.x < leftBound && gameObject.CompareTag("Obstacle"))
         {
