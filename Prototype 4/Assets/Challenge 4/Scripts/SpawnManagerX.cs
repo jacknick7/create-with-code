@@ -14,6 +14,9 @@ public class SpawnManagerX : MonoBehaviour
     public int enemyCount;
     public int waveCount = 1;
 
+    public float currentSpeed;
+    private float initialSpeed = 150;
+    private float addedSpeed = 25;
 
     public GameObject player; 
 
@@ -24,6 +27,7 @@ public class SpawnManagerX : MonoBehaviour
 
         if (enemyCount == 0)
         {
+            currentSpeed = initialSpeed + addedSpeed * (waveCount - 1);
             SpawnEnemyWave(waveCount);
         }
 
