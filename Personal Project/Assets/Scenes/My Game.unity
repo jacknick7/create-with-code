@@ -138,8 +138,8 @@ GameObject:
   - component: {fileID: 199161174}
   - component: {fileID: 199161173}
   m_Layer: 0
-  m_Name: Enemy 2
-  m_TagString: Untagged
+  m_Name: Junk 2
+  m_TagString: Junk
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -165,7 +165,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 199161168}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -229,10 +229,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 199161168}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4060637b6ba8bbd4783e0644d7a1125d, type: 3}
+  m_Script: {fileID: 11500000, guid: bf1cb67d758afc94fb3aa215100af086, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  horizontalSpeed: -2
+  verticalSpeed: -5
 --- !u!54 &199161174
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -536,8 +537,8 @@ GameObject:
   - component: {fileID: 1458605407}
   - component: {fileID: 1458605406}
   m_Layer: 0
-  m_Name: Enemy 1
-  m_TagString: Untagged
+  m_Name: Junk 1
+  m_TagString: Junk
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -563,7 +564,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1458605401}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -627,10 +628,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1458605401}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4060637b6ba8bbd4783e0644d7a1125d, type: 3}
+  m_Script: {fileID: 11500000, guid: bf1cb67d758afc94fb3aa215100af086, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  horizontalSpeed: -5
+  verticalSpeed: 1.5
 --- !u!54 &1458605407
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -662,8 +664,8 @@ GameObject:
   - component: {fileID: 1623830784}
   - component: {fileID: 1623830783}
   m_Layer: 0
-  m_Name: Obstacle 2
-  m_TagString: Untagged
+  m_Name: Junk 4
+  m_TagString: Junk
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -689,7 +691,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1623830778}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -753,10 +755,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1623830778}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4060637b6ba8bbd4783e0644d7a1125d, type: 3}
+  m_Script: {fileID: 11500000, guid: bf1cb67d758afc94fb3aa215100af086, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  horizontalSpeed: -3
+  verticalSpeed: -2
 --- !u!54 &1623830784
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -789,7 +792,7 @@ GameObject:
   - component: {fileID: 1651861340}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -913,8 +916,8 @@ GameObject:
   - component: {fileID: 1859882754}
   - component: {fileID: 1859882753}
   m_Layer: 0
-  m_Name: Obstacle 1
-  m_TagString: Untagged
+  m_Name: Junk 3
+  m_TagString: Junk
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -940,7 +943,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1859882748}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -1004,10 +1007,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1859882748}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4060637b6ba8bbd4783e0644d7a1125d, type: 3}
+  m_Script: {fileID: 11500000, guid: bf1cb67d758afc94fb3aa215100af086, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  horizontalSpeed: -2.5
+  verticalSpeed: 4
 --- !u!54 &1859882754
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1036,9 +1040,11 @@ GameObject:
   - component: {fileID: 2005240788}
   - component: {fileID: 2005240787}
   - component: {fileID: 2005240786}
+  - component: {fileID: 2005240791}
+  - component: {fileID: 2005240790}
   m_Layer: 0
   m_Name: Powerup
-  m_TagString: Untagged
+  m_TagString: Powerup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1065,7 +1071,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2005240785}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -1120,3 +1126,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2005240790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2005240785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf1cb67d758afc94fb3aa215100af086, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  horizontalSpeed: -0.5
+  verticalSpeed: 0
+--- !u!54 &2005240791
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2005240785}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

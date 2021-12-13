@@ -32,32 +32,34 @@ public class PlayerController : MonoBehaviour
 
         playerRb.AddForce(Vector3.up * speed * verticalInput);
         playerRb.AddForce(Vector3.right * speed * horizontalInput);
+
+        // Here limit velocity to a maxVelocity variable, consider both components xy at the same time
     }
 
-    // Prevent the player from leaving screen space, velocity is reset to zero so the player can return to the screen quickly
+    // Prevent the player from leaving screen space, velocity component affected is reset to zero so the player can return to the screen quickly
     // TODO: -add UI text in the screen center each time the player touches a bound
     void ConstrainPlayerPosition()
     {
         if (transform.position.y < -yBound)
         {
             transform.position = new Vector3(transform.position.x, -yBound, transform.position.z);
-            playerRb.velocity = Vector3.zero;
+            playerRb.velocity = new Vector3(playerRb.velocity.x, 0, 0);
         }
         else if (transform.position.y > yBound)
         {
             transform.position = new Vector3(transform.position.x, yBound, transform.position.z);
-            playerRb.velocity = Vector3.zero;
+            playerRb.velocity = new Vector3(playerRb.velocity.x, 0, 0);
         }
 
         if (transform.position.x < -xBound)
         {
             transform.position = new Vector3(-xBound, transform.position.y, transform.position.z);
-            playerRb.velocity = Vector3.zero;
+            playerRb.velocity = new Vector3(0, playerRb.velocity.y, 0);
         }
         else if (transform.position.x > xBound)
         {
             transform.position = new Vector3(xBound, transform.position.y, transform.position.z);
-            playerRb.velocity = Vector3.zero;
+            playerRb.velocity = new Vector3(0, playerRb.velocity.y, 0);
         }
     }
 
@@ -68,6 +70,26 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))
         {
             Debug.Log("Shoot!");
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Powerup"))
+        {
+            // Here apply whatever powerup does
+            Debug.Log("Player has Powerup");
+            Destroy(other.gameObject);
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Junk"))
+        {
+            // Here decrease player shields, player can choose to sacrifice shields to destroy junk, score is also increased this way
+            Debug.Log("Player collided with some Junk");
+            Destroy(collision.gameObject);
         }
     }
 }
