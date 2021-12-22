@@ -22,7 +22,7 @@ public class MoveObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.x < -xBound || transform.position.y < -yBound || transform.position.y > yBound)
+        if (transform.position.x < -xBound || transform.position.x > xBound || transform.position.y < -yBound || transform.position.y > yBound)
         {
             Destroy(gameObject);
         }
