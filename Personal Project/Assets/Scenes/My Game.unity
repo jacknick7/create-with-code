@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 199161169}
   - component: {fileID: 199161174}
   - component: {fileID: 199161173}
+  - component: {fileID: 199161175}
   m_Layer: 0
   m_Name: Junk 2
   m_TagString: Junk
@@ -151,7 +152,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 199161168}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: d085b383c886b9e429142afe0f94fd24, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -250,6 +251,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
+--- !u!114 &199161175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199161168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfcc32c433d087d47a97b1629a3c595a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &643808690
 GameObject:
   m_ObjectHideFlags: 0
@@ -536,6 +549,7 @@ GameObject:
   - component: {fileID: 1458605402}
   - component: {fileID: 1458605407}
   - component: {fileID: 1458605406}
+  - component: {fileID: 1458605408}
   m_Layer: 0
   m_Name: Junk 1
   m_TagString: Junk
@@ -550,7 +564,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1458605401}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: d085b383c886b9e429142afe0f94fd24, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -649,6 +663,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
+--- !u!114 &1458605408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458605401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfcc32c433d087d47a97b1629a3c595a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1623830778
 GameObject:
   m_ObjectHideFlags: 0
@@ -663,6 +689,7 @@ GameObject:
   - component: {fileID: 1623830779}
   - component: {fileID: 1623830784}
   - component: {fileID: 1623830783}
+  - component: {fileID: 1623830785}
   m_Layer: 0
   m_Name: Junk 4
   m_TagString: Junk
@@ -677,7 +704,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1623830778}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: d085b383c886b9e429142afe0f94fd24, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -776,6 +803,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
+--- !u!114 &1623830785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623830778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfcc32c433d087d47a97b1629a3c595a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1651861335
 GameObject:
   m_ObjectHideFlags: 0
@@ -915,6 +954,7 @@ GameObject:
   - component: {fileID: 1859882749}
   - component: {fileID: 1859882754}
   - component: {fileID: 1859882753}
+  - component: {fileID: 1859882755}
   m_Layer: 0
   m_Name: Junk 3
   m_TagString: Junk
@@ -929,7 +969,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1859882748}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: d085b383c886b9e429142afe0f94fd24, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -1028,6 +1068,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
+--- !u!114 &1859882755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1859882748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfcc32c433d087d47a97b1629a3c595a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2005240785
 GameObject:
   m_ObjectHideFlags: 0
@@ -1173,7 +1225,7 @@ GameObject:
   - component: {fileID: 2027285239}
   m_Layer: 0
   m_Name: Bullet
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

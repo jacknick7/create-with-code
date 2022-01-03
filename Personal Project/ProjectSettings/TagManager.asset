@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Junk
   - Powerup
+  - Bullet
   layers:
   - Default
   - TransparentFX
