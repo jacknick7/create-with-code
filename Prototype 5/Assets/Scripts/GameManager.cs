@@ -13,7 +13,9 @@ public class GameManager : MonoBehaviour
 
     public TextMeshProUGUI gameOverText;
     public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI livesText;
     private int score;
+    private int lives;
 
     public bool isGameActive;
 
@@ -50,9 +52,13 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
-        restartButton.gameObject.SetActive(true);
-        gameOverText.gameObject.SetActive(true);
-        isGameActive = false;
+        if (lives > 0) UpdateLives(1);
+        if (lives == 0)
+        {
+            restartButton.gameObject.SetActive(true);
+            gameOverText.gameObject.SetActive(true);
+            isGameActive = false;
+        }
     }
 
     public void RestartGame()
@@ -66,7 +72,15 @@ public class GameManager : MonoBehaviour
         isGameActive = true;
         score = 0;
         UpdateScore(0);
+        lives = 3;
+        UpdateLives(0);
         StartCoroutine(SpawnTarget());
         titleScreen.gameObject.SetActive(false);
+    }
+
+    void UpdateLives(int livesToSub)
+    {
+        lives -= livesToSub;
+        livesText.text = "Lives: " + lives;
     }
 }
