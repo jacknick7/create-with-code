@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
 
     public Button restartButton;
     public GameObject titleScreen;
+    public GameObject pauseScreen;
 
     // Start is called before the first frame update
     void Start()
@@ -31,7 +32,10 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Escape) && isGameActive)
+        {
+            HandlePauseResume();
+        }
     }
 
     IEnumerator SpawnTarget()
@@ -82,5 +86,19 @@ public class GameManager : MonoBehaviour
     {
         lives -= livesToSub;
         livesText.text = "Lives: " + lives;
+    }
+
+    void HandlePauseResume()
+    {
+        if (Time.timeScale == 0)
+        {
+            pauseScreen.gameObject.SetActive(false);
+            Time.timeScale = 1;
+        }
+        else
+        {
+            pauseScreen.gameObject.SetActive(true);
+            Time.timeScale = 0;
+        }
     }
 }
