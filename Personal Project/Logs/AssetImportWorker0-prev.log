@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.17f1 (a4537701e4ab) revision 10769271'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19044.1469; Version 2009; 64bit' Language: 'es' Physical Memory: 32711 MB
+OS: 'Windows 10 Home; OS build 19044.1503; Version 2009; 64bit' Language: 'es' Physical Memory: 32711 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
@@ -15,11 +15,11 @@ C:/Users/jackj/Desktop/LearnUnity/create-with-code/Personal Project
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51062
+53930
 Successfully changed project path to: C:/Users/jackj/Desktop/LearnUnity/create-with-code/Personal Project
 C:/Users/jackj/Desktop/LearnUnity/create-with-code/Personal Project
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 23.29 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 23.76 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.17f1 (a4537701e4ab)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/Resources/UnitySubsystems
@@ -35,21 +35,21 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56716
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56740
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001909 seconds.
+Registered in 0.001963 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 22.61 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 23.14 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.833 seconds
+- Completed reload, in  0.798 seconds
 Domain Reload Profiling:
-	ReloadAssembly (834ms)
-		BeginReloadAssembly (38ms)
+	ReloadAssembly (799ms)
+		BeginReloadAssembly (39ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
@@ -58,52 +58,52 @@ Domain Reload Profiling:
 		EndReloadAssembly (262ms)
 			LoadAssemblies (37ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (94ms)
+			SetupTypeCache (87ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (17ms)
-			SetupLoadedEditorAssemblies (103ms)
+			RebuildScriptCaches (18ms)
+			SetupLoadedEditorAssemblies (110ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (23ms)
 				BeforeProcessingInitializeOnLoad (11ms)
-				ProcessInitializeOnLoadAttributes (50ms)
-				ProcessInitializeOnLoadMethodAttributes (17ms)
+				ProcessInitializeOnLoadAttributes (54ms)
+				ProcessInitializeOnLoadMethodAttributes (19ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003148 seconds.
+Registered in 0.003490 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.36 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.650 seconds
+- Completed reload, in  0.667 seconds
 Domain Reload Profiling:
-	ReloadAssembly (650ms)
-		BeginReloadAssembly (90ms)
+	ReloadAssembly (668ms)
+		BeginReloadAssembly (92ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (13ms)
-		EndReloadAssembly (521ms)
-			LoadAssemblies (58ms)
+		EndReloadAssembly (534ms)
+			LoadAssemblies (59ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (153ms)
+			SetupTypeCache (157ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (22ms)
-			SetupLoadedEditorAssemblies (239ms)
+			RebuildScriptCaches (23ms)
+			SetupLoadedEditorAssemblies (245ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (49ms)
-				ProcessInitializeOnLoadAttributes (177ms)
+				BeforeProcessingInitializeOnLoad (51ms)
+				ProcessInitializeOnLoadAttributes (182ms)
 				ProcessInitializeOnLoadMethodAttributes (2ms)
 				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
@@ -113,14 +113,14 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1404 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 66.7 MB.
-System memory in use after: 66.8 MB.
+System memory in use before: 67.1 MB.
+System memory in use after: 67.2 MB.
 
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 1838.
-Total: 1.981100 ms (FindLiveObjects: 0.110500 ms CreateObjectMapping: 0.028900 ms MarkObjects: 1.802300 ms  DeleteObjects: 0.038800 ms)
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 1840.
+Total: 2.274000 ms (FindLiveObjects: 0.119300 ms CreateObjectMapping: 0.031600 ms MarkObjects: 2.073900 ms  DeleteObjects: 0.048600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -136,56 +136,1285 @@ AssetImportParameters requested are different than current active one (requested
 Received Import Request.
   path: Assets/Prefabs/Player.prefab
   artifactKey: Guid(eb2a7b3f04e04d3428773cde3eeb6119) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player.prefab using Guid(eb2a7b3f04e04d3428773cde3eeb6119) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '140d7d11bf19c77c9a7a915ccd3d10da') in 0.069052 seconds 
-  Import took 0.070752 seconds .
+Start importing Assets/Prefabs/Player.prefab using Guid(eb2a7b3f04e04d3428773cde3eeb6119) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ce339a05ce84df4283c74c3746ba9da') in 0.072514 seconds 
+  Import took 0.074316 seconds .
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.52 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 11 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 42.6 MB.
+System memory in use after: 42.7 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 1848.
+Total: 2.374600 ms (FindLiveObjects: 0.115400 ms CreateObjectMapping: 0.029700 ms MarkObjects: 2.221200 ms  DeleteObjects: 0.007900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003020 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.663 seconds
+Domain Reload Profiling:
+	ReloadAssembly (664ms)
+		BeginReloadAssembly (81ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (24ms)
+		EndReloadAssembly (540ms)
+			LoadAssemblies (60ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (157ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (23ms)
+			SetupLoadedEditorAssemblies (247ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (50ms)
+				ProcessInitializeOnLoadAttributes (183ms)
+				ProcessInitializeOnLoadMethodAttributes (3ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1397 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.0 MB.
+System memory in use after: 70.1 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1850.
+Total: 2.287800 ms (FindLiveObjects: 0.128400 ms CreateObjectMapping: 0.029500 ms MarkObjects: 2.117400 ms  DeleteObjects: 0.011700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 666.144451 seconds.
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(eb2a7b3f04e04d3428773cde3eeb6119) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(eb2a7b3f04e04d3428773cde3eeb6119) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ec0de24a0194a7834031df942f78f1c') in 0.062490 seconds 
+  Import took 0.064638 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003119 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.641 seconds
+Domain Reload Profiling:
+	ReloadAssembly (641ms)
+		BeginReloadAssembly (90ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (23ms)
+		EndReloadAssembly (510ms)
+			LoadAssemblies (58ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (151ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (21ms)
+			SetupLoadedEditorAssemblies (229ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (47ms)
+				ProcessInitializeOnLoadAttributes (170ms)
+				ProcessInitializeOnLoadMethodAttributes (2ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1397 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.0 MB.
+System memory in use after: 70.2 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1853.
+Total: 2.063400 ms (FindLiveObjects: 0.112200 ms CreateObjectMapping: 0.027600 ms MarkObjects: 1.911100 ms  DeleteObjects: 0.012000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 3843.550973 seconds.
+  path: Assets/Asset Store/SF_Fighter
+  artifactKey: Guid(5401b9efa04490049820fdc70e9fec2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/SF_Fighter using Guid(5401b9efa04490049820fdc70e9fec2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c15b031ae75cfee558932bb26ed513ce') in 0.004574 seconds 
+  Import took 0.006875 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 17.921893 seconds.
-  path: Assets/Asset Store/SF_Fighter/SF_Free-Fighter.prefab
-  artifactKey: Guid(cdbec52167efb6a48b63cebb3284c246) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Store/SF_Fighter/SF_Free-Fighter.prefab using Guid(cdbec52167efb6a48b63cebb3284c246) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '663edca345bcde744116671fd68b25aa') in 0.037198 seconds 
-  Import took 0.039053 seconds .
+  Time since last request: 6.396431 seconds.
+  path: Assets/Asset Store/SpaceFighter/Art Assets/CannonMedium_FBX.fbx
+  artifactKey: Guid(27ae1315ca7386c4380ea66773476fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/SpaceFighter/Art Assets/CannonMedium_FBX.fbx using Guid(27ae1315ca7386c4380ea66773476fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5138df7bc9a16e4dec20757d39dc5b23') in 0.163026 seconds 
+  Import took 0.164959 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 18.890609 seconds.
-  path: Assets/Asset Store/SpaceFighter/Art Assets/FighterMedium_FBX.fbx
-  artifactKey: Guid(d5f02142fd614bc429559c3d9c05482c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Store/SpaceFighter/Art Assets/FighterMedium_FBX.fbx using Guid(d5f02142fd614bc429559c3d9c05482c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81da3fd5664c3765831e7a1758252727') in 0.136739 seconds 
-  Import took 0.138673 seconds .
+  Time since last request: 8.891067 seconds.
+  path: Assets/Asset Store/SpaceFighter/Art Assets/CannonLow_FBX.fbx
+  artifactKey: Guid(873f12d87be8630438b877f50e96d434) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/SpaceFighter/Art Assets/CannonLow_FBX.fbx using Guid(873f12d87be8630438b877f50e96d434) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f85aeed4ffee2814ce3b057915e817e1') in 0.030528 seconds 
+  Import took 0.032408 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.669482 seconds.
-  path: Assets/Asset Store/SpaceFighter/Art Assets/EngineTrails_FBX.fbx
-  artifactKey: Guid(58752080b7a2b014b984236fa50b1a31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Store/SpaceFighter/Art Assets/EngineTrails_FBX.fbx using Guid(58752080b7a2b014b984236fa50b1a31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af6b000c1b1d81730b94a2cba0d1a994') in 0.029683 seconds 
-  Import took 0.031445 seconds .
+  Time since last request: 3739.384965 seconds.
+  path: Assets/Asset Store/Asteroids Pack/Assets/Prefabs/Asteroid 1.prefab
+  artifactKey: Guid(fa49e460baf435b4780da7196c2ab473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Asteroids Pack/Assets/Prefabs/Asteroid 1.prefab using Guid(fa49e460baf435b4780da7196c2ab473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43570c98598f9f30593bef045fe42da2') in 0.152048 seconds 
+  Import took 0.154697 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 20.102640 seconds.
-  path: Assets/Asset Store/SpaceFighter/Art Assets/FighterLow_FBX.fbx
-  artifactKey: Guid(6f679f9f2b4323f4eb8c1e642c986c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Store/SpaceFighter/Art Assets/FighterLow_FBX.fbx using Guid(6f679f9f2b4323f4eb8c1e642c986c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '204b2ee6d152d74d1f7e8b3021194bf0') in 0.048308 seconds 
-  Import took 0.050107 seconds .
+  Time since last request: 0.004745 seconds.
+  path: Assets/Asset Store/Asteroids Pack/Assets/Prefabs/Asteroid 1.prefab
+  artifactKey: Guid(fa49e460baf435b4780da7196c2ab473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Asteroids Pack/Assets/Prefabs/Asteroid 1.prefab using Guid(fa49e460baf435b4780da7196c2ab473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43570c98598f9f30593bef045fe42da2') in 0.021528 seconds 
+  Import took 0.023305 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 320.937747 seconds.
-  path: Assets/Asset Store/SpaceFighter/Art Assets/Textures/FighterMedium.png
-  artifactKey: Guid(3b934735959a12e49ae17d04ffdd4d6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Store/SpaceFighter/Art Assets/Textures/FighterMedium.png using Guid(3b934735959a12e49ae17d04ffdd4d6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '434d100c3e2ed14ff6f0fcc646535157') in 0.026635 seconds 
-  Import took 0.028827 seconds .
+  Time since last request: 1.459419 seconds.
+  path: Assets/Asset Store/Asteroids Pack/Assets/Prefabs/Asteroid 2.prefab
+  artifactKey: Guid(84cc3cd234dfc9d4d9d2e92c0eb0af75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Asteroids Pack/Assets/Prefabs/Asteroid 2.prefab using Guid(84cc3cd234dfc9d4d9d2e92c0eb0af75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b86b7d921ec0a53364309d2379abc5f8') in 0.024098 seconds 
+  Import took 0.025992 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.002748 seconds.
-  path: Assets/Asset Store/SpaceFighter/Art Assets/Textures/FighterMedium.png
-  artifactKey: Guid(3b934735959a12e49ae17d04ffdd4d6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Store/SpaceFighter/Art Assets/Textures/FighterMedium.png using Guid(3b934735959a12e49ae17d04ffdd4d6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '434d100c3e2ed14ff6f0fcc646535157') in 0.005046 seconds 
-  Import took 0.006451 seconds .
+  Time since last request: 0.576946 seconds.
+  path: Assets/Asset Store/Asteroids Pack/Assets/Prefabs/Asteroid 3.prefab
+  artifactKey: Guid(04d0bf4be9447154188d86f6e3b8dce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Asteroids Pack/Assets/Prefabs/Asteroid 3.prefab using Guid(04d0bf4be9447154188d86f6e3b8dce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fcc4b7fb1e2cf6fbc21055707085bae') in 0.034171 seconds 
+  Import took 0.036086 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001114 seconds.
+  path: Assets/Asset Store/Asteroids Pack/Assets/Prefabs/Asteroid 3.prefab
+  artifactKey: Guid(04d0bf4be9447154188d86f6e3b8dce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Asteroids Pack/Assets/Prefabs/Asteroid 3.prefab using Guid(04d0bf4be9447154188d86f6e3b8dce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fcc4b7fb1e2cf6fbc21055707085bae') in 0.031777 seconds 
+  Import took 0.033681 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.896381 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Gems/Gems Blue 2.prefab
+  artifactKey: Guid(2619de61a0b90fd4fb8e9acf72bc066b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Gems/Gems Blue 2.prefab using Guid(2619de61a0b90fd4fb8e9acf72bc066b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '829d9bfa27ca1212d650d5877c87792c') in 0.030657 seconds 
+  Import took 0.032504 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.736734 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Gems/Gems Blue 3.prefab
+  artifactKey: Guid(d146ebed5ffb3884b9c3004f5205d016) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Gems/Gems Blue 3.prefab using Guid(d146ebed5ffb3884b9c3004f5205d016) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a605d03967622a39473ae1be1a6f08a6') in 0.018448 seconds 
+  Import took 0.020396 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.479834 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Gems/Gems Green 2.prefab
+  artifactKey: Guid(212c8f4aa859daf42a44e9265c169117) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Gems/Gems Green 2.prefab using Guid(212c8f4aa859daf42a44e9265c169117) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6703c368c77a9cb85cce52e7a1b160e9') in 0.009515 seconds 
+  Import took 0.011352 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.772685 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Gems/Gems Orange 3.prefab
+  artifactKey: Guid(db38ac8fcbacf554686a60ddb2abb1ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Gems/Gems Orange 3.prefab using Guid(db38ac8fcbacf554686a60ddb2abb1ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89c40bbf374686453304e67b1da304fb') in 0.014700 seconds 
+  Import took 0.016654 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.019629 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Gems/Gems Purple 1.prefab
+  artifactKey: Guid(fb56ce62f3f2b2345af1ef11c6add8e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Gems/Gems Purple 1.prefab using Guid(fb56ce62f3f2b2345af1ef11c6add8e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79581805230f1166decce71d2418bbec') in 0.009251 seconds 
+  Import took 0.011090 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.727399 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Gems/Gems Purple 2.prefab
+  artifactKey: Guid(aa68a982ac1667840a2bdd736ba1be1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Gems/Gems Purple 2.prefab using Guid(aa68a982ac1667840a2bdd736ba1be1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e0762eb96055a0ad0aa860641dd2e66') in 0.007563 seconds 
+  Import took 0.009429 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000811 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Gems/Gems Purple 2.prefab
+  artifactKey: Guid(aa68a982ac1667840a2bdd736ba1be1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Gems/Gems Purple 2.prefab using Guid(aa68a982ac1667840a2bdd736ba1be1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e0762eb96055a0ad0aa860641dd2e66') in 0.013219 seconds 
+  Import took 0.014897 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.900287 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Gems/Gems Purple 3.prefab
+  artifactKey: Guid(f3176a80f2d66354691a9376d763da75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Gems/Gems Purple 3.prefab using Guid(f3176a80f2d66354691a9376d763da75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd1eb1d79d48c421c69640690d928d57') in 0.007455 seconds 
+  Import took 0.009242 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000727 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Gems/Gems Purple 3.prefab
+  artifactKey: Guid(f3176a80f2d66354691a9376d763da75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Gems/Gems Purple 3.prefab using Guid(f3176a80f2d66354691a9376d763da75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd1eb1d79d48c421c69640690d928d57') in 0.039263 seconds 
+  Import took 0.040962 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.849831 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Gems/Gems Orange 2.prefab
+  artifactKey: Guid(761ed8f0c671dd848a45a31809671ef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Gems/Gems Orange 2.prefab using Guid(761ed8f0c671dd848a45a31809671ef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf3f45bc55a590cc8c7e6350dc1b1fc4') in 0.007515 seconds 
+  Import took 0.009541 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001065 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Gems/Gems Orange 2.prefab
+  artifactKey: Guid(761ed8f0c671dd848a45a31809671ef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Gems/Gems Orange 2.prefab using Guid(761ed8f0c671dd848a45a31809671ef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf3f45bc55a590cc8c7e6350dc1b1fc4') in 0.029012 seconds 
+  Import took 0.030818 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.836706 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Gems/Gems Green 3.prefab
+  artifactKey: Guid(a4049470d0c0bc0458ac17c63616167d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Gems/Gems Green 3.prefab using Guid(a4049470d0c0bc0458ac17c63616167d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '625538b7bb65f9f500320ab97f289574') in 0.007741 seconds 
+  Import took 0.009683 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000413 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Gems/Gems Green 3.prefab
+  artifactKey: Guid(a4049470d0c0bc0458ac17c63616167d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Gems/Gems Green 3.prefab using Guid(a4049470d0c0bc0458ac17c63616167d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '625538b7bb65f9f500320ab97f289574') in 0.012246 seconds 
+  Import took 0.013910 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.090862 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Glowing Rocks/Glowing Rock Blue 4.prefab
+  artifactKey: Guid(f7ae68db1b78ebf4fa8f3728c3da587a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Glowing Rocks/Glowing Rock Blue 4.prefab using Guid(f7ae68db1b78ebf4fa8f3728c3da587a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5170a30f579ba79f9762de8acdabd5fa') in 0.011947 seconds 
+  Import took 0.013855 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.650809 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Glowing Rocks/Glowing Rock Purple 2.prefab
+  artifactKey: Guid(4306497ffea2b6345b0769a3a402346a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Glowing Rocks/Glowing Rock Purple 2.prefab using Guid(4306497ffea2b6345b0769a3a402346a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0662f38216121ec3c33ba8f8e0a171c') in 0.010411 seconds 
+  Import took 0.012334 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.884054 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Glowing Rocks/Glowing Rock Purple 6.prefab
+  artifactKey: Guid(e7fbb6b690eb3f94fa6d1e031be4249b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Glowing Rocks/Glowing Rock Purple 6.prefab using Guid(e7fbb6b690eb3f94fa6d1e031be4249b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d6a93acf579a451ad7c6938b88f8007') in 0.006603 seconds 
+  Import took 0.008760 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.459981 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Glowing Rocks/Glowing Rock Purple 7.prefab
+  artifactKey: Guid(d259368b696e9a54f8b899cf86be4dca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Glowing Rocks/Glowing Rock Purple 7.prefab using Guid(d259368b696e9a54f8b899cf86be4dca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90dc703cf0ff6b48dae837f226f9414a') in 0.007389 seconds 
+  Import took 0.009205 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001388 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Glowing Rocks/Glowing Rock Purple 7.prefab
+  artifactKey: Guid(d259368b696e9a54f8b899cf86be4dca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Glowing Rocks/Glowing Rock Purple 7.prefab using Guid(d259368b696e9a54f8b899cf86be4dca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90dc703cf0ff6b48dae837f226f9414a') in 0.006997 seconds 
+  Import took 0.008799 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.106958 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Glowing Rocks/Glowing Rock Purple 4.prefab
+  artifactKey: Guid(a233330d3364a5944bbb4055ddfea91e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Glowing Rocks/Glowing Rock Purple 4.prefab using Guid(a233330d3364a5944bbb4055ddfea91e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af7c8e925c8d3758ff96eda0a11667fc') in 0.006888 seconds 
+  Import took 0.008857 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.585178 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Glowing Rocks/Glowing Rock Orange 7.prefab
+  artifactKey: Guid(a7dd5fb910026db41924595f6ed8d59e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Glowing Rocks/Glowing Rock Orange 7.prefab using Guid(a7dd5fb910026db41924595f6ed8d59e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b417669ccaf2e3306277c5aefc612684') in 0.012075 seconds 
+  Import took 0.014082 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.280731 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Glowing Rocks/Glowing Rock Orange 3.prefab
+  artifactKey: Guid(d0649821fbc653f4684291258842e4e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Glowing Rocks/Glowing Rock Orange 3.prefab using Guid(d0649821fbc653f4684291258842e4e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d4bcee1d62a501f71cda7e98c8cab82') in 0.010445 seconds 
+  Import took 0.012276 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.610321 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Rocks/Rock 3.prefab
+  artifactKey: Guid(3f78c2fb6bcbd9a4181e8bf0f559176c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Rocks/Rock 3.prefab using Guid(3f78c2fb6bcbd9a4181e8bf0f559176c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df16de22e486a01cdf9ae562ebb03efb') in 0.008454 seconds 
+  Import took 0.010338 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Rocks/Rock 3.prefab
+  artifactKey: Guid(3f78c2fb6bcbd9a4181e8bf0f559176c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Rocks/Rock 3.prefab using Guid(3f78c2fb6bcbd9a4181e8bf0f559176c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df16de22e486a01cdf9ae562ebb03efb') in 0.012093 seconds 
+  Import took 0.013845 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.347631 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Planets/Planet.prefab
+  artifactKey: Guid(b08a3b728fb90754c951ad226c63bd30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Planets/Planet.prefab using Guid(b08a3b728fb90754c951ad226c63bd30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1256286f71c7582381cd9442df2b082e') in 0.009473 seconds 
+  Import took 0.011355 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.716617 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Planets
+  artifactKey: Guid(b6bcdd4cb9171c248a4345178b362541) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Planets using Guid(b6bcdd4cb9171c248a4345178b362541) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25681b73fa9c51b00ef79a237fb1622f') in 0.001654 seconds 
+  Import took 0.003516 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.811317 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Obelisks/Obelisk Blue 3.prefab
+  artifactKey: Guid(6fc4272394cb0c04eaf8f49754445e7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Obelisks/Obelisk Blue 3.prefab using Guid(6fc4272394cb0c04eaf8f49754445e7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '907cef4d9fd9c0428ce68bcc3e14d6d8') in 0.007794 seconds 
+  Import took 0.009756 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.605268 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Obelisks/Obelisk Blue 1.prefab
+  artifactKey: Guid(6d183a6b7baf45e4690a5499ea693e6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Obelisks/Obelisk Blue 1.prefab using Guid(6d183a6b7baf45e4690a5499ea693e6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d95dec096a8a11d918119fc0f3a17ae') in 0.007064 seconds 
+  Import took 0.009012 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.972752 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Obelisks/Obelisk Blue 5.prefab
+  artifactKey: Guid(915256f108662ca4c824163fc343f185) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Obelisks/Obelisk Blue 5.prefab using Guid(915256f108662ca4c824163fc343f185) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f12d13d1949b704c2c54a186af121670') in 0.008362 seconds 
+  Import took 0.010212 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.512635 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Obelisks/Obelisk Green 2.prefab
+  artifactKey: Guid(f4f7657a699522546b8b1861846bd2ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Obelisks/Obelisk Green 2.prefab using Guid(f4f7657a699522546b8b1861846bd2ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64943ef8b9d3aa51e4b603d1e01464f7') in 0.007272 seconds 
+  Import took 0.009288 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.722987 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Obelisks/Obelisk Green 5.prefab
+  artifactKey: Guid(f0b8b72512bbdae4fa04e0b5263ffd1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Obelisks/Obelisk Green 5.prefab using Guid(f0b8b72512bbdae4fa04e0b5263ffd1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '958b5e678f15dd9b219e4be4b9f0a65e') in 0.009440 seconds 
+  Import took 0.011420 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.721082 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Obelisks/Obelisk Green 4.prefab
+  artifactKey: Guid(f5527cd242a78914ab97f2148def874e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Obelisks/Obelisk Green 4.prefab using Guid(f5527cd242a78914ab97f2148def874e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe102eced4cd4b0f41c0337ec0c22a86') in 0.006623 seconds 
+  Import took 0.008584 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.410931 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Obelisks/Obelisk Orange 2.prefab
+  artifactKey: Guid(989f9435a4cb5b94c81f4902dc8b9363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Obelisks/Obelisk Orange 2.prefab using Guid(989f9435a4cb5b94c81f4902dc8b9363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b30a318d68e7f1d87d204412dcea66b4') in 0.007237 seconds 
+  Import took 0.009106 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.902712 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Obelisks/Obelisk Orange 1.prefab
+  artifactKey: Guid(e422d2d9a1f270c49968153f01a4137a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Obelisks/Obelisk Orange 1.prefab using Guid(e422d2d9a1f270c49968153f01a4137a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52461a7889d802752863bf919fdfbc1e') in 0.006793 seconds 
+  Import took 0.008660 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Obelisks/Obelisk Orange 1.prefab
+  artifactKey: Guid(e422d2d9a1f270c49968153f01a4137a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Obelisks/Obelisk Orange 1.prefab using Guid(e422d2d9a1f270c49968153f01a4137a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52461a7889d802752863bf919fdfbc1e') in 0.006047 seconds 
+  Import took 0.007518 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.114511 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Glowing Rocks/Glowing Rock Green 1.prefab
+  artifactKey: Guid(fe056cd25617f9f4b8313de051f6e5e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Glowing Rocks/Glowing Rock Green 1.prefab using Guid(fe056cd25617f9f4b8313de051f6e5e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd59a0b6f8149664639105ca7b060d811') in 0.006995 seconds 
+  Import took 0.008894 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.639187 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Glowing Rocks/Glowing Rock Blue 7.prefab
+  artifactKey: Guid(c98daaf434449fd4aa5a00cb9889248d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Glowing Rocks/Glowing Rock Blue 7.prefab using Guid(c98daaf434449fd4aa5a00cb9889248d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cacaadb95260e1ce00be4265c16a026b') in 0.020021 seconds 
+  Import took 0.021968 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.475160 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Blue Scifi Rock 1.prefab
+  artifactKey: Guid(83f9e87a6c219f54984147340eea1b17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Blue Scifi Rock 1.prefab using Guid(83f9e87a6c219f54984147340eea1b17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9a5658633faa73124e7c4f9136c2652') in 0.007567 seconds 
+  Import took 0.009648 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001489 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Blue Scifi Rock 1.prefab
+  artifactKey: Guid(83f9e87a6c219f54984147340eea1b17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Blue Scifi Rock 1.prefab using Guid(83f9e87a6c219f54984147340eea1b17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9a5658633faa73124e7c4f9136c2652') in 0.024610 seconds 
+  Import took 0.026440 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.920281 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Blue 3.prefab
+  artifactKey: Guid(6f364a339d7ab5645a9a4767e2c68c1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Blue 3.prefab using Guid(6f364a339d7ab5645a9a4767e2c68c1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65fed616d3066a9df223f83f3b5bee18') in 0.008104 seconds 
+  Import took 0.010717 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000399 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Blue 3.prefab
+  artifactKey: Guid(6f364a339d7ab5645a9a4767e2c68c1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Blue 3.prefab using Guid(6f364a339d7ab5645a9a4767e2c68c1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65fed616d3066a9df223f83f3b5bee18') in 0.006570 seconds 
+  Import took 0.008870 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.804083 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Green 1.prefab
+  artifactKey: Guid(b75001371d850a14c9f4b4de88cd53b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Green 1.prefab using Guid(b75001371d850a14c9f4b4de88cd53b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bf6a879b5c8dc103a64cb761f15a6bd') in 0.007042 seconds 
+  Import took 0.009089 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001409 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Green 1.prefab
+  artifactKey: Guid(b75001371d850a14c9f4b4de88cd53b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Green 1.prefab using Guid(b75001371d850a14c9f4b4de88cd53b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bf6a879b5c8dc103a64cb761f15a6bd') in 0.006602 seconds 
+  Import took 0.008414 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.814130 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Orange 2.prefab
+  artifactKey: Guid(315ec8f592984544584a6993bc4e07dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Orange 2.prefab using Guid(315ec8f592984544584a6993bc4e07dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '311c14069cb03da53c5cf41c49e25446') in 0.007279 seconds 
+  Import took 0.009211 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001506 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Orange 2.prefab
+  artifactKey: Guid(315ec8f592984544584a6993bc4e07dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Orange 2.prefab using Guid(315ec8f592984544584a6993bc4e07dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '311c14069cb03da53c5cf41c49e25446') in 0.015143 seconds 
+  Import took 0.016983 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.663560 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Green 4.prefab
+  artifactKey: Guid(59d4c8e03fa369242b4aa83a20c7d036) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Green 4.prefab using Guid(59d4c8e03fa369242b4aa83a20c7d036) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '297298cad8a8ff3b477095515b6c1451') in 0.007234 seconds 
+  Import took 0.009178 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001013 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Green 4.prefab
+  artifactKey: Guid(59d4c8e03fa369242b4aa83a20c7d036) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Green 4.prefab using Guid(59d4c8e03fa369242b4aa83a20c7d036) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '297298cad8a8ff3b477095515b6c1451') in 0.008973 seconds 
+  Import took 0.010536 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.968170 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Purple 1.prefab
+  artifactKey: Guid(42da9a8218b89604ab2dc2c05cbf78da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Purple 1.prefab using Guid(42da9a8218b89604ab2dc2c05cbf78da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c86b77e4b77fb2a2917ae57c6124f2f6') in 0.011151 seconds 
+  Import took 0.013038 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.622507 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Purple 3.prefab
+  artifactKey: Guid(49ffeef3889e18647a3494814044dbc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Purple 3.prefab using Guid(49ffeef3889e18647a3494814044dbc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9c9c3d2aad001a2d36693c876243bcd') in 0.013181 seconds 
+  Import took 0.015121 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.092764 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Purple 4.prefab
+  artifactKey: Guid(a54207108839183458f0964b2d137bed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Purple 4.prefab using Guid(a54207108839183458f0964b2d137bed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '866fe855eba5d2fdcda872831cf776ea') in 0.006601 seconds 
+  Import took 0.008517 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Purple 4.prefab
+  artifactKey: Guid(a54207108839183458f0964b2d137bed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Purple 4.prefab using Guid(a54207108839183458f0964b2d137bed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '866fe855eba5d2fdcda872831cf776ea') in 0.005787 seconds 
+  Import took 0.007463 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.508355 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Orange 3.prefab
+  artifactKey: Guid(67480a096dabc454d9cd00057d61a41e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Orange 3.prefab using Guid(67480a096dabc454d9cd00057d61a41e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33612fb619f3c9da16446b92cc7ff668') in 0.006560 seconds 
+  Import took 0.008535 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000525 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Orange 3.prefab
+  artifactKey: Guid(67480a096dabc454d9cd00057d61a41e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Orange 3.prefab using Guid(67480a096dabc454d9cd00057d61a41e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33612fb619f3c9da16446b92cc7ff668') in 0.005651 seconds 
+  Import took 0.007383 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.499542 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Blue 2.prefab
+  artifactKey: Guid(6d62cdb0f31b12143bf1cfd3ee08d46b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Blue 2.prefab using Guid(6d62cdb0f31b12143bf1cfd3ee08d46b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dcb81730f220d4a83bc19af0393bb2a') in 0.007374 seconds 
+  Import took 0.009319 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001664 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Blue 2.prefab
+  artifactKey: Guid(6d62cdb0f31b12143bf1cfd3ee08d46b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Blue 2.prefab using Guid(6d62cdb0f31b12143bf1cfd3ee08d46b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dcb81730f220d4a83bc19af0393bb2a') in 0.009131 seconds 
+  Import took 0.010874 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.371302 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Blue 1.prefab
+  artifactKey: Guid(a71b17274ba052d4cb6ec8a1602dc086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Blue 1.prefab using Guid(a71b17274ba052d4cb6ec8a1602dc086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04538d0b8ed80f5b7793c6e12f676617') in 0.006489 seconds 
+  Import took 0.008353 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000299 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Blue 1.prefab
+  artifactKey: Guid(a71b17274ba052d4cb6ec8a1602dc086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Blue 1.prefab using Guid(a71b17274ba052d4cb6ec8a1602dc086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04538d0b8ed80f5b7793c6e12f676617') in 0.005460 seconds 
+  Import took 0.007110 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.711009 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Orange 1.prefab
+  artifactKey: Guid(34ba2546fecc39b43866d650e6ca6ecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Orange 1.prefab using Guid(34ba2546fecc39b43866d650e6ca6ecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69c947c3db42eda2a8a33f8a64dc87db') in 0.006379 seconds 
+  Import took 0.008332 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000596 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Orange 1.prefab
+  artifactKey: Guid(34ba2546fecc39b43866d650e6ca6ecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Orange 1.prefab using Guid(34ba2546fecc39b43866d650e6ca6ecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69c947c3db42eda2a8a33f8a64dc87db') in 0.005555 seconds 
+  Import took 0.006845 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.862257 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Green 2.prefab
+  artifactKey: Guid(9d4155e36d16c434c82f37584f006c5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Green 2.prefab using Guid(9d4155e36d16c434c82f37584f006c5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1161f1a2fbf29ed3fb368dea7f2d389d') in 0.006768 seconds 
+  Import took 0.008712 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001602 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Green 2.prefab
+  artifactKey: Guid(9d4155e36d16c434c82f37584f006c5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Green 2.prefab using Guid(9d4155e36d16c434c82f37584f006c5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1161f1a2fbf29ed3fb368dea7f2d389d') in 0.010287 seconds 
+  Import took 0.012101 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.418247 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Blue 4.prefab
+  artifactKey: Guid(0f0dfde96ae5a1d46b3353dcdc9fbc83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Blue 4.prefab using Guid(0f0dfde96ae5a1d46b3353dcdc9fbc83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '187d4d0905c1a46309597dd75a1141d4') in 0.013154 seconds 
+  Import took 0.015161 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.566474 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Green 3.prefab
+  artifactKey: Guid(29497e1a2d98bb243b5269f07c8f8801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Green 3.prefab using Guid(29497e1a2d98bb243b5269f07c8f8801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c42e843831bf486c6dfb2202631f7b4') in 0.007663 seconds 
+  Import took 0.009591 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001136 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Green 3.prefab
+  artifactKey: Guid(29497e1a2d98bb243b5269f07c8f8801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Green 3.prefab using Guid(29497e1a2d98bb243b5269f07c8f8801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c42e843831bf486c6dfb2202631f7b4') in 0.029875 seconds 
+  Import took 0.031688 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.200229 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Obelisks/Obelisk Green 3.prefab
+  artifactKey: Guid(54ed8f703e458ee4993c627b527c03fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Obelisks/Obelisk Green 3.prefab using Guid(54ed8f703e458ee4993c627b527c03fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fbb9a2f9eb70c402f2778af45de9c62') in 0.008309 seconds 
+  Import took 0.010323 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Obelisks/Obelisk Green 3.prefab
+  artifactKey: Guid(54ed8f703e458ee4993c627b527c03fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Obelisks/Obelisk Green 3.prefab using Guid(54ed8f703e458ee4993c627b527c03fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fbb9a2f9eb70c402f2778af45de9c62') in 0.024998 seconds 
+  Import took 0.026782 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.370521 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Glowing Rocks/Glowing Rock Green 2.prefab
+  artifactKey: Guid(88d98ba2855fa8f488f17dda433fbe06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Glowing Rocks/Glowing Rock Green 2.prefab using Guid(88d98ba2855fa8f488f17dda433fbe06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db1a617f763f0aa8c2a31bef4b9948c6') in 0.023836 seconds 
+  Import took 0.025866 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.110412 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Glowing Rocks/Glowing Rock Green 5.prefab
+  artifactKey: Guid(58839838b580d2e4da0036b493ac76eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Glowing Rocks/Glowing Rock Green 5.prefab using Guid(58839838b580d2e4da0036b493ac76eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf48fb1c39a9cd49ce35a8d3e075aae5') in 0.009114 seconds 
+  Import took 0.011477 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 191.088173 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Obelisks/Obelisk Purple 3.prefab
+  artifactKey: Guid(ab38090ba4669424b967ad8082315f11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Obelisks/Obelisk Purple 3.prefab using Guid(ab38090ba4669424b967ad8082315f11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6034adfd4c4427761fad71e051956a83') in 0.009111 seconds 
+  Import took 0.011175 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.403816 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Obelisks/Obelisk Orange 4.prefab
+  artifactKey: Guid(59b94500a5dd91640be0e05dadc40a3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Obelisks/Obelisk Orange 4.prefab using Guid(59b94500a5dd91640be0e05dadc40a3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd840b69d4a0d70a72cf138bf5375a1fe') in 0.007490 seconds 
+  Import took 0.009388 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 122.231383 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Obelisks/Obelisk Purple 1.prefab
+  artifactKey: Guid(4cb7c80d5d565a74c8c987bd0e8c7df3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Obelisks/Obelisk Purple 1.prefab using Guid(4cb7c80d5d565a74c8c987bd0e8c7df3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62b2578429fc173d4f2183fddc793332') in 0.008188 seconds 
+  Import took 0.010166 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000561 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Obelisks/Obelisk Purple 1.prefab
+  artifactKey: Guid(4cb7c80d5d565a74c8c987bd0e8c7df3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Obelisks/Obelisk Purple 1.prefab using Guid(4cb7c80d5d565a74c8c987bd0e8c7df3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62b2578429fc173d4f2183fddc793332') in 0.009976 seconds 
+  Import took 0.011831 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.581017 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Obelisks/Obelisk Purple 2.prefab
+  artifactKey: Guid(6283364f7d9031f42beb6493d7fe8988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Obelisks/Obelisk Purple 2.prefab using Guid(6283364f7d9031f42beb6493d7fe8988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8464f0d3171face640cc3659c781aa37') in 0.008203 seconds 
+  Import took 0.010280 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Obelisks/Obelisk Purple 2.prefab
+  artifactKey: Guid(6283364f7d9031f42beb6493d7fe8988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Obelisks/Obelisk Purple 2.prefab using Guid(6283364f7d9031f42beb6493d7fe8988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8464f0d3171face640cc3659c781aa37') in 0.006998 seconds 
+  Import took 0.008751 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.626870 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Orange 4.prefab
+  artifactKey: Guid(0771d137fb168584480dfaa82a21f8e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Orange 4.prefab using Guid(0771d137fb168584480dfaa82a21f8e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d905377a26f2c89fd8e705662793981') in 0.008467 seconds 
+  Import took 0.010363 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001037 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Orange 4.prefab
+  artifactKey: Guid(0771d137fb168584480dfaa82a21f8e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Sci-fi Rocks/Scifi Rock Orange 4.prefab using Guid(0771d137fb168584480dfaa82a21f8e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d905377a26f2c89fd8e705662793981') in 0.032285 seconds 
+  Import took 0.033974 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 191.693269 seconds.
+  path: Assets/Prefabs/Powerup.prefab
+  artifactKey: Guid(a3be84d116f08ee48aa9daacef8d9891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Powerup.prefab using Guid(a3be84d116f08ee48aa9daacef8d9891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49147e91173e21cf733dd84bf4ae434c') in 0.007521 seconds 
+  Import took 0.009561 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 120.787103 seconds.
+  path: Assets/Prefabs/Powerup.prefab
+  artifactKey: Guid(a3be84d116f08ee48aa9daacef8d9891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Powerup.prefab using Guid(a3be84d116f08ee48aa9daacef8d9891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6abd3ab738cb80cd577e501130e5f416') in 0.008689 seconds 
+  Import took 0.010658 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.031109 seconds.
+  path: Assets/Prefabs/Powerup.prefab
+  artifactKey: Guid(a3be84d116f08ee48aa9daacef8d9891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Powerup.prefab using Guid(a3be84d116f08ee48aa9daacef8d9891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6abd3ab738cb80cd577e501130e5f416') in 0.006681 seconds 
+  Import took 0.008599 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005071 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.628 seconds
+Domain Reload Profiling:
+	ReloadAssembly (628ms)
+		BeginReloadAssembly (84ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (504ms)
+			LoadAssemblies (57ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (148ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (20ms)
+			SetupLoadedEditorAssemblies (228ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (48ms)
+				ProcessInitializeOnLoadAttributes (168ms)
+				ProcessInitializeOnLoadMethodAttributes (2ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1397 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.8 MB.
+System memory in use after: 70.9 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1861.
+Total: 2.338000 ms (FindLiveObjects: 0.134400 ms CreateObjectMapping: 0.039200 ms MarkObjects: 2.148900 ms  DeleteObjects: 0.014700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 100.518552 seconds.
+  path: Assets/Prefabs/Powerup.prefab
+  artifactKey: Guid(a3be84d116f08ee48aa9daacef8d9891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Powerup.prefab using Guid(a3be84d116f08ee48aa9daacef8d9891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78225cc7248da0ebbdc0f9d85b485cd8') in 0.036020 seconds 
+  Import took 0.038329 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001435 seconds.
+  path: Assets/Prefabs/Powerup.prefab
+  artifactKey: Guid(a3be84d116f08ee48aa9daacef8d9891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Powerup.prefab using Guid(a3be84d116f08ee48aa9daacef8d9891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78225cc7248da0ebbdc0f9d85b485cd8') in 0.006679 seconds 
+  Import took 0.008099 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002970 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.639 seconds
+Domain Reload Profiling:
+	ReloadAssembly (639ms)
+		BeginReloadAssembly (93ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (23ms)
+		EndReloadAssembly (506ms)
+			LoadAssemblies (59ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (150ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (21ms)
+			SetupLoadedEditorAssemblies (228ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (47ms)
+				ProcessInitializeOnLoadAttributes (169ms)
+				ProcessInitializeOnLoadMethodAttributes (2ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1397 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.8 MB.
+System memory in use after: 71.0 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1864.
+Total: 2.075800 ms (FindLiveObjects: 0.114400 ms CreateObjectMapping: 0.030500 ms MarkObjects: 1.919000 ms  DeleteObjects: 0.011200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003473 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.634 seconds
+Domain Reload Profiling:
+	ReloadAssembly (634ms)
+		BeginReloadAssembly (90ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (504ms)
+			LoadAssemblies (58ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (149ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (21ms)
+			SetupLoadedEditorAssemblies (225ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (47ms)
+				ProcessInitializeOnLoadAttributes (166ms)
+				ProcessInitializeOnLoadMethodAttributes (2ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1397 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.9 MB.
+System memory in use after: 71.0 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1866.
+Total: 2.137400 ms (FindLiveObjects: 0.111000 ms CreateObjectMapping: 0.031200 ms MarkObjects: 1.981700 ms  DeleteObjects: 0.012600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003161 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.614 seconds
+Domain Reload Profiling:
+	ReloadAssembly (614ms)
+		BeginReloadAssembly (75ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (499ms)
+			LoadAssemblies (57ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (147ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (21ms)
+			SetupLoadedEditorAssemblies (224ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (46ms)
+				ProcessInitializeOnLoadAttributes (165ms)
+				ProcessInitializeOnLoadMethodAttributes (2ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1397 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.9 MB.
+System memory in use after: 71.0 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1868.
+Total: 2.177400 ms (FindLiveObjects: 0.118900 ms CreateObjectMapping: 0.032800 ms MarkObjects: 2.012400 ms  DeleteObjects: 0.012600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 829.599089 seconds.
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(eb2a7b3f04e04d3428773cde3eeb6119) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(eb2a7b3f04e04d3428773cde3eeb6119) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93ef50c880c0c4164b5c8049a0849eed') in 0.051997 seconds 
+  Import took 0.053968 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.564961 seconds.
+  path: Assets/Prefabs/Powerup.prefab
+  artifactKey: Guid(a3be84d116f08ee48aa9daacef8d9891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Powerup.prefab using Guid(a3be84d116f08ee48aa9daacef8d9891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7347616932f564b002abf3903d8a004c') in 0.017013 seconds 
+  Import took 0.018979 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 495.265757 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Glowing Rocks/Glowing Rock Orange 2.prefab
+  artifactKey: Guid(7a74e85b4cac8c64297c2153fed3cb62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Glowing Rocks/Glowing Rock Orange 2.prefab using Guid(7a74e85b4cac8c64297c2153fed3cb62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33c743c9f8f1141f63415aed6b0beef8') in 0.009715 seconds 
+  Import took 0.011751 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.479179 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Glowing Rocks/Glowing Rock Blue 5.prefab
+  artifactKey: Guid(61a15fe4f1078e34a80b55cd40d951a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Glowing Rocks/Glowing Rock Blue 5.prefab using Guid(61a15fe4f1078e34a80b55cd40d951a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b08acfe82c1ff5afd6c8c8e0505e799') in 0.009459 seconds 
+  Import took 0.011291 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.063131 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Glowing Rocks/Glowing Rock Blue 2.prefab
+  artifactKey: Guid(2cae9ca05dddc7c42b6185ffab5f9bbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Glowing Rocks/Glowing Rock Blue 2.prefab using Guid(2cae9ca05dddc7c42b6185ffab5f9bbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58d238c5a3b6c0a9bcfe3dde2cf08927') in 0.010239 seconds 
+  Import took 0.012263 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 248.148279 seconds.
+  path: Assets/Prefabs/Junk 1.prefab
+  artifactKey: Guid(7e7570ac67f9a394887d0cc4c5f78692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Junk 1.prefab using Guid(7e7570ac67f9a394887d0cc4c5f78692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '275667038c2456cdae9f2db6e6068845') in 0.008838 seconds 
+  Import took 0.010887 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.010566 seconds.
+  path: Assets/Prefabs/Junk 1.prefab
+  artifactKey: Guid(7e7570ac67f9a394887d0cc4c5f78692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Junk 1.prefab using Guid(7e7570ac67f9a394887d0cc4c5f78692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '275667038c2456cdae9f2db6e6068845') in 0.006960 seconds 
+  Import took 0.008640 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003018 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.611 seconds
+Domain Reload Profiling:
+	ReloadAssembly (611ms)
+		BeginReloadAssembly (78ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (493ms)
+			LoadAssemblies (56ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (144ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (20ms)
+			SetupLoadedEditorAssemblies (222ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (45ms)
+				ProcessInitializeOnLoadAttributes (165ms)
+				ProcessInitializeOnLoadMethodAttributes (2ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1397 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.9 MB.
+System memory in use after: 71.0 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1871.
+Total: 2.201300 ms (FindLiveObjects: 0.113100 ms CreateObjectMapping: 0.030100 ms MarkObjects: 2.046000 ms  DeleteObjects: 0.011500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 267.585129 seconds.
+  path: Assets/Prefabs/Junk 2.prefab
+  artifactKey: Guid(9a68f590a9afddd44a45fe240a5fc77c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Junk 2.prefab using Guid(9a68f590a9afddd44a45fe240a5fc77c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a765939752a0b45792f7ff925815b9c7') in 0.037096 seconds 
+  Import took 0.038988 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.143809 seconds.
+  path: Assets/Asset Store/Low Poly Space Rocks/Prefabs/Glowing Rocks/Glowing Rock Blue 6.prefab
+  artifactKey: Guid(55d2170943c24424fb8400963479a14f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Store/Low Poly Space Rocks/Prefabs/Glowing Rocks/Glowing Rock Blue 6.prefab using Guid(55d2170943c24424fb8400963479a14f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0ce2c4cc81433fe6c0cd4bdfa5411de') in 0.009090 seconds 
+  Import took 0.011123 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003005 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.623 seconds
+Domain Reload Profiling:
+	ReloadAssembly (623ms)
+		BeginReloadAssembly (80ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (501ms)
+			LoadAssemblies (56ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (143ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (20ms)
+			SetupLoadedEditorAssemblies (232ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (45ms)
+				ProcessInitializeOnLoadAttributes (175ms)
+				ProcessInitializeOnLoadMethodAttributes (2ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1397 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.9 MB.
+System memory in use after: 71.0 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1874.
+Total: 2.071000 ms (FindLiveObjects: 0.133400 ms CreateObjectMapping: 0.032500 ms MarkObjects: 1.887300 ms  DeleteObjects: 0.017100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 162.124291 seconds.
+  path: Assets/Prefabs/Junk 3.prefab
+  artifactKey: Guid(2e7f803d397d36145844c8dd3943a254) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Junk 3.prefab using Guid(2e7f803d397d36145844c8dd3943a254) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '881e5ac0e39678a4f151b2dcba486eb9') in 0.036508 seconds 
+  Import took 0.038615 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004121 seconds.
+  path: Assets/Prefabs/Junk 3.prefab
+  artifactKey: Guid(2e7f803d397d36145844c8dd3943a254) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Junk 3.prefab using Guid(2e7f803d397d36145844c8dd3943a254) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '881e5ac0e39678a4f151b2dcba486eb9') in 0.007555 seconds 
+  Import took 0.009336 seconds .
 
 ========================================================================
 Received Prepare
@@ -194,45 +1423,45 @@ Registered in 0.003027 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.36 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.623 seconds
+- Completed reload, in  0.622 seconds
 Domain Reload Profiling:
-	ReloadAssembly (623ms)
-		BeginReloadAssembly (79ms)
+	ReloadAssembly (622ms)
+		BeginReloadAssembly (78ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (22ms)
-		EndReloadAssembly (505ms)
-			LoadAssemblies (56ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (504ms)
+			LoadAssemblies (57ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (151ms)
+			SetupTypeCache (144ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (20ms)
-			SetupLoadedEditorAssemblies (228ms)
+			RebuildScriptCaches (21ms)
+			SetupLoadedEditorAssemblies (231ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (46ms)
-				ProcessInitializeOnLoadAttributes (171ms)
+				BeforeProcessingInitializeOnLoad (45ms)
+				ProcessInitializeOnLoadAttributes (174ms)
 				ProcessInitializeOnLoadMethodAttributes (2ms)
 				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (4ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.28 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1397 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 70.2 MB.
-System memory in use after: 70.3 MB.
+System memory in use before: 70.9 MB.
+System memory in use after: 71.0 MB.
 
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1855.
-Total: 1.956400 ms (FindLiveObjects: 0.089400 ms CreateObjectMapping: 0.029900 ms MarkObjects: 1.824600 ms  DeleteObjects: 0.011400 ms)
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1877.
+Total: 2.144300 ms (FindLiveObjects: 0.096000 ms CreateObjectMapping: 0.029400 ms MarkObjects: 2.006500 ms  DeleteObjects: 0.011500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -247,49 +1476,49 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003008 seconds.
+Registered in 0.002908 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.634 seconds
+- Completed reload, in  0.612 seconds
 Domain Reload Profiling:
-	ReloadAssembly (635ms)
-		BeginReloadAssembly (90ms)
+	ReloadAssembly (612ms)
+		BeginReloadAssembly (82ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (23ms)
-		EndReloadAssembly (504ms)
-			LoadAssemblies (58ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (491ms)
+			LoadAssemblies (56ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (148ms)
+			SetupTypeCache (144ms)
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (20ms)
-			SetupLoadedEditorAssemblies (224ms)
+			SetupLoadedEditorAssemblies (221ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (47ms)
-				ProcessInitializeOnLoadAttributes (163ms)
+				BeforeProcessingInitializeOnLoad (45ms)
+				ProcessInitializeOnLoadAttributes (164ms)
 				ProcessInitializeOnLoadMethodAttributes (2ms)
-				AfterProcessingInitializeOnLoad (7ms)
+				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.30 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1397 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 70.3 MB.
-System memory in use after: 70.4 MB.
+System memory in use before: 70.9 MB.
+System memory in use after: 71.0 MB.
 
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1857.
-Total: 2.106600 ms (FindLiveObjects: 0.123100 ms CreateObjectMapping: 0.039500 ms MarkObjects: 1.931200 ms  DeleteObjects: 0.012200 ms)
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1879.
+Total: 2.063500 ms (FindLiveObjects: 0.088100 ms CreateObjectMapping: 0.024200 ms MarkObjects: 1.939700 ms  DeleteObjects: 0.010900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -301,4 +1530,12 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 614.972230 seconds.
+  path: Assets/Prefabs/Junk 4.prefab
+  artifactKey: Guid(1629ac2bbf8bbf7438daac6c2f2f279b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Junk 4.prefab using Guid(1629ac2bbf8bbf7438daac6c2f2f279b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8eaba26f2a131b8dabc1b5060fad27b7') in 0.035566 seconds 
+  Import took 0.037517 seconds .
+
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
