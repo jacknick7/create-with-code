@@ -4,27 +4,32 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private float speed = 1.0f;
+    [SerializeField] private float speed = 7.0f;
+    [SerializeField] private float maxSpeed = 4.0f;
     private float yBound = 5.25f;
     private float xBound = 14.15f;
     private Rigidbody playerRb;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         playerRb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        MovePlayer();
-        ConstrainPlayerPosition();
         HandleShooting();
     }
 
-    // Move the player based on WASD/arrows keys input
-    // TODO: -explore how to aboid current acceleration, maybe use another movement system?
+    // FixedUpdate is used when applying physics-related functions
+    private void FixedUpdate()
+    {
+        MovePlayer();
+        ConstrainPlayerPosition();
+    }
+
+    // Move the player with forces based on WASD or arrows keys input
     void MovePlayer()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
@@ -33,7 +38,11 @@ public class PlayerController : MonoBehaviour
         playerRb.AddForce(Vector3.up * speed * verticalInput);
         playerRb.AddForce(Vector3.right * speed * horizontalInput);
 
-        // Here limit velocity to a maxVelocity variable, consider both components xy at the same time
+        // Limit our velocity to maxSpeed
+        if (playerRb.velocity.magnitude > maxSpeed)
+        {
+            playerRb.velocity = playerRb.velocity.normalized * maxSpeed;
+        }
     }
 
     // Prevent the player from leaving screen space, velocity component affected is reset to zero so the player can return to the screen quickly
