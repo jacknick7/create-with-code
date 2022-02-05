@@ -6,6 +6,9 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float speed = 7.0f;
     [SerializeField] private float maxSpeed = 4.0f;
+    [SerializeField] private GameObject outOfBounds;
+    private float outOfBoundsTimer = 0.0f;
+    private const float OUTOFBOUNDS_TIME = 2.0f;
     private float yBound = 5.25f;
     private float xBound = 14.15f;
     private Rigidbody playerRb;
@@ -20,6 +23,15 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         HandleShooting();
+
+        if (outOfBoundsTimer > 0)
+        {
+            outOfBoundsTimer -= Time.deltaTime;
+            if (outOfBoundsTimer <= 0)
+            {
+                outOfBounds.gameObject.SetActive(false);
+            }
+        }
     }
 
     // FixedUpdate is used when applying physics-related functions
@@ -53,22 +65,30 @@ public class PlayerController : MonoBehaviour
         {
             transform.position = new Vector3(transform.position.x, -yBound, transform.position.z);
             playerRb.velocity = new Vector3(playerRb.velocity.x, 0, 0);
+            outOfBounds.gameObject.SetActive(true);
+            outOfBoundsTimer = OUTOFBOUNDS_TIME;
         }
         else if (transform.position.y > yBound)
         {
             transform.position = new Vector3(transform.position.x, yBound, transform.position.z);
             playerRb.velocity = new Vector3(playerRb.velocity.x, 0, 0);
+            outOfBounds.gameObject.SetActive(true);
+            outOfBoundsTimer = OUTOFBOUNDS_TIME;
         }
 
         if (transform.position.x < -xBound)
         {
             transform.position = new Vector3(-xBound, transform.position.y, transform.position.z);
             playerRb.velocity = new Vector3(0, playerRb.velocity.y, 0);
+            outOfBounds.gameObject.SetActive(true);
+            outOfBoundsTimer = OUTOFBOUNDS_TIME;
         }
         else if (transform.position.x > xBound)
         {
             transform.position = new Vector3(xBound, transform.position.y, transform.position.z);
             playerRb.velocity = new Vector3(0, playerRb.velocity.y, 0);
+            outOfBounds.gameObject.SetActive(true);
+            outOfBoundsTimer = OUTOFBOUNDS_TIME;
         }
     }
 
