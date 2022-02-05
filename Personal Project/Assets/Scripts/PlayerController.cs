@@ -6,11 +6,13 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float speed = 7.0f;
     [SerializeField] private float maxSpeed = 4.0f;
-    [SerializeField] private GameObject outOfBounds;
+
+    [SerializeField] private GameObject outOfBoundsText;
     private float outOfBoundsTimer = 0.0f;
     private const float OUTOFBOUNDS_TIME = 2.0f;
     private float yBound = 5.25f;
     private float xBound = 14.15f;
+
     private Rigidbody playerRb;
 
     // Start is called before the first frame update
@@ -29,7 +31,7 @@ public class PlayerController : MonoBehaviour
             outOfBoundsTimer -= Time.deltaTime;
             if (outOfBoundsTimer <= 0)
             {
-                outOfBounds.gameObject.SetActive(false);
+                outOfBoundsText.gameObject.SetActive(false);
             }
         }
     }
@@ -57,37 +59,45 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    // Prevent the player from leaving screen space, velocity component affected is reset to zero so the player can return to the screen quickly
-    // TODO: -add UI text in the screen center each time the player touches a bound
+    // Prevent the player from leaving screen space, velocity component affected is reset to zero
+    // so the player can return to the screen quickly. Also show UI text for some time.
     void ConstrainPlayerPosition()
     {
+        bool isOutOfBound = false;
+        Vector3 newPos = transform.position;
+        Vector3 newVel = playerRb.velocity;
+
         if (transform.position.y < -yBound)
         {
-            transform.position = new Vector3(transform.position.x, -yBound, transform.position.z);
-            playerRb.velocity = new Vector3(playerRb.velocity.x, 0, 0);
-            outOfBounds.gameObject.SetActive(true);
-            outOfBoundsTimer = OUTOFBOUNDS_TIME;
+            newPos.y = -yBound;
+            newVel.y = 0;
+            isOutOfBound = true;
         }
         else if (transform.position.y > yBound)
         {
-            transform.position = new Vector3(transform.position.x, yBound, transform.position.z);
-            playerRb.velocity = new Vector3(playerRb.velocity.x, 0, 0);
-            outOfBounds.gameObject.SetActive(true);
-            outOfBoundsTimer = OUTOFBOUNDS_TIME;
+            newPos.y = yBound;
+            newVel.y = 0;
+            isOutOfBound = true;
         }
 
         if (transform.position.x < -xBound)
         {
-            transform.position = new Vector3(-xBound, transform.position.y, transform.position.z);
-            playerRb.velocity = new Vector3(0, playerRb.velocity.y, 0);
-            outOfBounds.gameObject.SetActive(true);
-            outOfBoundsTimer = OUTOFBOUNDS_TIME;
+            newPos.x = -xBound;
+            newVel.x = 0;
+            isOutOfBound = true;
         }
         else if (transform.position.x > xBound)
         {
-            transform.position = new Vector3(xBound, transform.position.y, transform.position.z);
-            playerRb.velocity = new Vector3(0, playerRb.velocity.y, 0);
-            outOfBounds.gameObject.SetActive(true);
+            newPos.x = xBound;
+            newVel.x = 0;
+            isOutOfBound = true;
+        }
+
+        if (isOutOfBound)
+        {
+            transform.position = newPos;
+            playerRb.velocity = newVel;
+            outOfBoundsText.gameObject.SetActive(true);
             outOfBoundsTimer = OUTOFBOUNDS_TIME;
         }
     }

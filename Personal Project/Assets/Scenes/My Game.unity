@@ -556,7 +556,7 @@ GameObject:
   - component: {fileID: 1179198136}
   - component: {fileID: 1179198135}
   m_Layer: 5
-  m_Name: Out Bounds Text
+  m_Name: Out Of Bounds Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -804,6 +804,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 804818902934843841, guid: eb2a7b3f04e04d3428773cde3eeb6119, type: 3}
       propertyPath: outOfBounds
+      value: 
+      objectReference: {fileID: 1179198133}
+    - target: {fileID: 804818902934843841, guid: eb2a7b3f04e04d3428773cde3eeb6119, type: 3}
+      propertyPath: outOfBoundsText
       value: 
       objectReference: {fileID: 1179198133}
     - target: {fileID: 804818902934843846, guid: eb2a7b3f04e04d3428773cde3eeb6119, type: 3}
