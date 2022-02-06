@@ -15,6 +15,12 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody playerRb;
 
+    [SerializeField] private GameObject bullet;
+    [SerializeField] private GameObject spawnManager;
+    private float bulletTimer = 0.0f;
+    private const float BULLET_TIME = 0.5f;
+    private Vector3 bulletOffset = new Vector3(0.5f, 0, 0.4f);
+
     // Start is called before the first frame update
     private void Start()
     {
@@ -33,6 +39,10 @@ public class PlayerController : MonoBehaviour
             {
                 outOfBoundsText.gameObject.SetActive(false);
             }
+        }
+        if (bulletTimer > 0)
+        {
+            bulletTimer -= Time.deltaTime;
         }
     }
 
@@ -106,9 +116,11 @@ public class PlayerController : MonoBehaviour
     // TODO: -add the cooldown
     void HandleShooting()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space) && bulletTimer <= 0)
         {
             Debug.Log("Shoot!");
+            Instantiate(bullet, transform.position + bulletOffset, bullet.transform.rotation, spawnManager.transform);
+            bulletTimer = BULLET_TIME;
         }
     }
 
