@@ -14,9 +14,12 @@ public class SpawnManager : MonoBehaviour
     private float junkSpawnTime = 1.5f;
     private float powerupSpawnTime = 2.5f;
 
+    private GameManager gameManager;
+
     // Start is called before the first frame update
     void Start()
     {
+        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
         InvokeRepeating("SpawnRandomJunk", startDelay, junkSpawnTime);
         InvokeRepeating("SpawnPowerup", startDelay, powerupSpawnTime);
     }
@@ -29,21 +32,27 @@ public class SpawnManager : MonoBehaviour
 
     void SpawnRandomJunk()
     {
-        int randomIndex = Random.Range(0, junk.Length);
+        if (gameManager.isGameActive)
+        {
+            int randomIndex = Random.Range(0, junk.Length);
 
-        float ySpawn = Random.Range(-ySpawnRange, ySpawnRange);
-        Vector3 spawnPos = new Vector3(xSpawn, ySpawn, junk[randomIndex].gameObject.transform.position.z);
+            float ySpawn = Random.Range(-ySpawnRange, ySpawnRange);
+            Vector3 spawnPos = new Vector3(xSpawn, ySpawn, junk[randomIndex].gameObject.transform.position.z);
 
-        Instantiate(junk[randomIndex], spawnPos, junk[randomIndex].gameObject.transform.rotation);
-        // Change speed values for new instantiate junk here
+            Instantiate(junk[randomIndex], spawnPos, junk[randomIndex].gameObject.transform.rotation);
+            // Change speed values for new instantiate junk here
+        }
     }
 
     void SpawnPowerup()
     {
-        float ySpawn = Random.Range(-ySpawnRange, ySpawnRange);
-        Vector3 spawnPos = new Vector3(xSpawn, ySpawn, powerup.gameObject.transform.position.z);
+        if (gameManager.isGameActive)
+        {
+            float ySpawn = Random.Range(-ySpawnRange, ySpawnRange);
+            Vector3 spawnPos = new Vector3(xSpawn, ySpawn, powerup.gameObject.transform.position.z);
 
-        Instantiate(powerup, spawnPos, powerup.gameObject.transform.rotation);
-        // Change speed values for new instantiate powerup here
+            Instantiate(powerup, spawnPos, powerup.gameObject.transform.rotation);
+            // Change speed values for new instantiate powerup here
+        }
     }
 }
