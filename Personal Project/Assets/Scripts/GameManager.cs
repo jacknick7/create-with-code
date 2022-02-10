@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
 
     private int score;
     private int shield;
+    private const int MAX_SHIELD = 150;
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private TextMeshProUGUI shieldText;
 
@@ -75,14 +76,14 @@ public class GameManager : MonoBehaviour
         scoreText.SetText("Score: " + score);
     }
 
-    private void UpdateShield(int shieldToAdd)
+    public void UpdateShield(int shieldToAdd)
     {
-        shield += shieldToAdd;
+        shield = Mathf.Min(shield + shieldToAdd, MAX_SHIELD);
+        shieldText.SetText("Shield: " + shield + '%');
         if (shield < 0)
         {
             shieldText.SetText("Shield: --");
-
+            GameOver();
         }
-        shieldText.SetText("Shield: " + shield + '%');
     }
 }

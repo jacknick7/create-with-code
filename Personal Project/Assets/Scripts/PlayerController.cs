@@ -21,10 +21,13 @@ public class PlayerController : MonoBehaviour
     private const float BULLET_TIME = 0.5f;
     private Vector3 bulletOffset = new Vector3(0.5f, 0, 0.4f);
 
+    private GameManager gameManager;
+
     // Start is called before the first frame update
     private void Start()
     {
         playerRb = GetComponent<Rigidbody>();
+        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -128,17 +131,21 @@ public class PlayerController : MonoBehaviour
     {
         if (other.CompareTag("Powerup"))
         {
-            // Here apply whatever powerup does
+            gameManager.UpdateShield(40);
+            // Here play powerup touched sound
             Debug.Log("Player has Powerup");
             Destroy(other.gameObject);
         }
     }
 
+    // TODO: give some seconds of invencibility after collision with junk
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Junk"))
         {
             // Here decrease player shields, player can choose to sacrifice shields to destroy junk, score is also increased this way
+            // Each Junk will have it's own damage value
+            gameManager.UpdateShield(-30);
             Debug.Log("Player collided with some Junk");
             Destroy(collision.gameObject);
         }
