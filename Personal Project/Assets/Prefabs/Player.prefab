@@ -108,7 +108,7 @@ Transform:
   m_GameObject: {fileID: 804818902934843850}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4, y: 0, z: -1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_Children:
   - {fileID: 3252508037665298913}
   - {fileID: 8344955906791723782}
@@ -144,6 +144,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e3c424c9af29df4e8c6aec592794de4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 7
+  maxSpeed: 4
+  outOfBoundsText: {fileID: 0}
+  bullet: {fileID: 8629962105427522179, guid: 2c5cd33ca7c73c045ae7266776e7958c, type: 3}
+  spawnManager: {fileID: 0}
+  shield: {fileID: 255100748375196119}
+  explosion: {fileID: 0}
 --- !u!136 &4727454613937966678
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -170,7 +177,7 @@ GameObject:
   - component: {fileID: 8236997247216703812}
   - component: {fileID: 9088174527162982015}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Explosion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

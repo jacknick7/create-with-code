@@ -10,16 +10,23 @@ public class GameManager : MonoBehaviour
     private int score;
     private int shield;
     private const int MAX_SHIELD = 150;
+
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private TextMeshProUGUI shieldText;
+    [SerializeField] private GameObject uIScreen;
 
     private bool isGamePaused = false;
     [SerializeField] private GameObject pauseScreen;
 
+    [SerializeField] private TextMeshProUGUI finalScoreText;
+    [SerializeField] private GameObject gameOverScreen;
+
+    [SerializeField] private PlayerController playerController;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -37,6 +44,8 @@ public class GameManager : MonoBehaviour
         UpdateScore(0);
         shield = 100;
         UpdateShield(0);
+        uIScreen.SetActive(true);
+        playerController.ResetPlayer();
         isGameActive = true;
         // More here
     }
@@ -60,8 +69,12 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Game Over!");
         // Here change player to explosion + destroy delayed
+
         isGameActive = false;
-        // Show Game Over screen with score and menu/quit buttons
+
+        uIScreen.SetActive(false);
+        finalScoreText.SetText("FINAL SCORE: " + score + "pts");
+        gameOverScreen.SetActive(true);
     }
 
     public void QuitGame()

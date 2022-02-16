@@ -21,13 +21,20 @@ public class PlayerController : MonoBehaviour
     private const float BULLET_TIME = 0.5f;
     private Vector3 bulletOffset = new Vector3(0.5f, 0, 0.4f);
 
+    private Vector3 iniPos;
+
+    [SerializeField] private GameObject shield;
+    [SerializeField] private GameObject explosion;
+
     private GameManager gameManager;
 
     // Start is called before the first frame update
     private void Start()
     {
+        iniPos = transform.position;
         playerRb = GetComponent<Rigidbody>();
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -149,5 +156,17 @@ public class PlayerController : MonoBehaviour
             Debug.Log("Player collided with some Junk");
             Destroy(collision.gameObject);
         }
+    }
+
+    public void ResetPlayer()
+    {
+        transform.position = iniPos;
+        playerRb.velocity = Vector3.zero;
+        shield.SetActive(false);
+        explosion.SetActive(false);
+        bulletTimer = 0;
+        outOfBoundsTimer = 0;
+        outOfBoundsText.gameObject.SetActive(false);
+        gameObject.SetActive(true);
     }
 }
