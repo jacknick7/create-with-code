@@ -15,11 +15,11 @@ C:/Users/jackj/Desktop/LearnUnity/create-with-code/Personal Project
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60461
+53613
 Successfully changed project path to: C:/Users/jackj/Desktop/LearnUnity/create-with-code/Personal Project
 C:/Users/jackj/Desktop/LearnUnity/create-with-code/Personal Project
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 24.80 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 23.85 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.17f1 (a4537701e4ab)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/Resources/UnitySubsystems
@@ -35,30 +35,30 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56884
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56456
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001963 seconds.
+Registered in 0.001979 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 22.51 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 22.76 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.816 seconds
+- Completed reload, in  0.849 seconds
 Domain Reload Profiling:
-	ReloadAssembly (816ms)
-		BeginReloadAssembly (39ms)
+	ReloadAssembly (849ms)
+		BeginReloadAssembly (40ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (252ms)
+		EndReloadAssembly (254ms)
 			LoadAssemblies (38ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (85ms)
+			SetupTypeCache (86ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (17ms)
 			SetupLoadedEditorAssemblies (104ms)
@@ -67,25 +67,25 @@ Domain Reload Profiling:
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (23ms)
 				BeforeProcessingInitializeOnLoad (11ms)
-				ProcessInitializeOnLoadAttributes (49ms)
-				ProcessInitializeOnLoadMethodAttributes (18ms)
+				ProcessInitializeOnLoadAttributes (50ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003304 seconds.
+Registered in 0.003324 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.37 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.660 seconds
+- Completed reload, in  0.658 seconds
 Domain Reload Profiling:
-	ReloadAssembly (660ms)
-		BeginReloadAssembly (92ms)
+	ReloadAssembly (658ms)
+		BeginReloadAssembly (90ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
@@ -94,25 +94,25 @@ Domain Reload Profiling:
 		EndReloadAssembly (528ms)
 			LoadAssemblies (58ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (153ms)
+			SetupTypeCache (154ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (23ms)
-			SetupLoadedEditorAssemblies (245ms)
+			SetupLoadedEditorAssemblies (243ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (51ms)
-				ProcessInitializeOnLoadAttributes (182ms)
+				BeforeProcessingInitializeOnLoad (50ms)
+				ProcessInitializeOnLoadAttributes (179ms)
 				ProcessInitializeOnLoadMethodAttributes (2ms)
-				AfterProcessingInitializeOnLoad (5ms)
+				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (4ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
 Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1419 Unused Serialized files (Serialized files now loaded: 0)
@@ -120,7 +120,7 @@ System memory in use before: 69.8 MB.
 System memory in use after: 69.9 MB.
 
 Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 1858.
-Total: 2.053600 ms (FindLiveObjects: 0.114600 ms CreateObjectMapping: 0.032200 ms MarkObjects: 1.858800 ms  DeleteObjects: 0.047300 ms)
+Total: 2.220700 ms (FindLiveObjects: 0.125300 ms CreateObjectMapping: 0.030100 ms MarkObjects: 2.020200 ms  DeleteObjects: 0.044100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -134,505 +134,73 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Course Library/Audio/Music/cron_audio_8-bit_modern01.ogg
-  artifactKey: Guid(27404163c8cfe425e8e26c911c1acde2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Music/cron_audio_8-bit_modern01.ogg using Guid(27404163c8cfe425e8e26c911c1acde2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '244a1cc092df11c86029051580dfa986') in 0.086390 seconds 
-  Import took 0.088215 seconds .
+  path: Assets/Scripts/PowerupBehaviour.cs
+  artifactKey: Guid(773501743327cfa4a839aec1cfedb1c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PowerupBehaviour.cs using Guid(773501743327cfa4a839aec1cfedb1c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e238cd00ac6f5304f3a7b858ab52782d') in 0.037310 seconds 
+  Import took 0.038930 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000174 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/Gameplay/Boom_C_08_8-Bit_11025Hz.wav
-  artifactKey: Guid(ad1e7e92faf364edea5027d7c47ed724) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/Gameplay/Boom_C_08_8-Bit_11025Hz.wav using Guid(ad1e7e92faf364edea5027d7c47ed724) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4df28752bc853ea79f730585626ae63') in 0.008283 seconds 
-  Import took 0.009765 seconds .
+  Time since last request: 450.564061 seconds.
+  path: Assets/Scripts/PlayerController.cs
+  artifactKey: Guid(5e3c424c9af29df4e8c6aec592794de4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerController.cs using Guid(5e3c424c9af29df4e8c6aec592794de4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a9b7fe02fdc9eab84ff4467a7a7a045') in 0.001511 seconds 
+  Import took 0.003312 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000149 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/Gameplay/Blip_C_05_8-Bit_11025Hz.wav
-  artifactKey: Guid(72879285ded844717bde060c8c6c6128) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/Gameplay/Blip_C_05_8-Bit_11025Hz.wav using Guid(72879285ded844717bde060c8c6c6128) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a2a33738dfffff9739a46e49f27c282') in 0.007525 seconds 
-  Import took 0.009149 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000157 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/Gameplay/Boom_C_06_8-Bit_11025Hz.wav
-  artifactKey: Guid(af2b012ecebc34a91b65a0351bd46cc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/Gameplay/Boom_C_06_8-Bit_11025Hz.wav using Guid(af2b012ecebc34a91b65a0351bd46cc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fcf250ca3bbf049e0ada4a730bbbeb4') in 0.005133 seconds 
-  Import took 0.006540 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000130 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/Gameplay/Boom_C_09_8-Bit_11025Hz.wav
-  artifactKey: Guid(86e4d514bc68143ff95357c93ddf0525) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/Gameplay/Boom_C_09_8-Bit_11025Hz.wav using Guid(86e4d514bc68143ff95357c93ddf0525) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '208b5d5fdf834fc5e760066862ee03bb') in 0.004916 seconds 
-  Import took 0.006285 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000143 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/Gameplay/Blip_C_02_8-Bit_11025Hz.wav
-  artifactKey: Guid(67357478fa899460198f84822b54cc8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/Gameplay/Blip_C_02_8-Bit_11025Hz.wav using Guid(67357478fa899460198f84822b54cc8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '807541afe3860b80d37c8d00082c4cfa') in 0.005872 seconds 
-  Import took 0.007315 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000123 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/Gameplay/Blip_C_01_8-Bit_11025Hz.wav
-  artifactKey: Guid(ca7aececce7aa48e0bc07b33d575a5f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/Gameplay/Blip_C_01_8-Bit_11025Hz.wav using Guid(ca7aececce7aa48e0bc07b33d575a5f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '989b0f9e1466f5b9ea22d08e714d62c3') in 0.005348 seconds 
-  Import took 0.006948 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000145 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/UI/Click 01_Minimal UI Sounds.wav
-  artifactKey: Guid(667390647aa874fe7a3dc7cd1fabdeef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/UI/Click 01_Minimal UI Sounds.wav using Guid(667390647aa874fe7a3dc7cd1fabdeef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d9b3021719caa4f07aaf6e8847afc58') in 0.005161 seconds 
-  Import took 0.006794 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000164 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/Gameplay/Blip_C_06_8-Bit_11025Hz.wav
-  artifactKey: Guid(fc8c7aa9892294b0fb6b98d1063fbbe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/Gameplay/Blip_C_06_8-Bit_11025Hz.wav using Guid(fc8c7aa9892294b0fb6b98d1063fbbe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cd1c15804c7f40908eb3cf5dab1e5e2') in 0.004892 seconds 
-  Import took 0.006198 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000117 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/Gameplay/Blip_C_03_8-Bit_11025Hz.wav
-  artifactKey: Guid(f928159802e324af2b95417fa6ce3fdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/Gameplay/Blip_C_03_8-Bit_11025Hz.wav using Guid(f928159802e324af2b95417fa6ce3fdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87d209a0f3f436a1a5ff64952316f42c') in 0.005076 seconds 
-  Import took 0.006521 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000167 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/Gameplay/Blip_C_07_8-Bit_11025Hz.wav
-  artifactKey: Guid(6f1637b41d770415d9d1e6a33a1db4c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/Gameplay/Blip_C_07_8-Bit_11025Hz.wav using Guid(6f1637b41d770415d9d1e6a33a1db4c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '225c8d6ed3cf964863c235c78bd4a2a7') in 0.005510 seconds 
-  Import took 0.006906 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000130 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/Gameplay/Boom_C_02_8-Bit_11025Hz.wav
-  artifactKey: Guid(ef2cde67276e7490e860213ae5393038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/Gameplay/Boom_C_02_8-Bit_11025Hz.wav using Guid(ef2cde67276e7490e860213ae5393038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ed6f639dda74aec4b428b423bf6fcd2') in 0.005652 seconds 
-  Import took 0.007304 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000167 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/Gameplay/Boom_C_01_8-Bit_11025Hz.wav
-  artifactKey: Guid(2a921313c927f45238a0b8baabe3ab12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/Gameplay/Boom_C_01_8-Bit_11025Hz.wav using Guid(2a921313c927f45238a0b8baabe3ab12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75adcec5a678be57745bb18042bae28e') in 0.005295 seconds 
-  Import took 0.006912 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000135 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/Gameplay/Boom_C_07_8-Bit_11025Hz.wav
-  artifactKey: Guid(c40d1b26de66d4a3a8cc9b58a973e3c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/Gameplay/Boom_C_07_8-Bit_11025Hz.wav using Guid(c40d1b26de66d4a3a8cc9b58a973e3c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '774f769d8b452022c84e14a4f1960f9f') in 0.004809 seconds 
-  Import took 0.006209 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000120 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/Gameplay/Blip_C_04_8-Bit_11025Hz.wav
-  artifactKey: Guid(9ee6fa16d1507404dbad73bc796dd25c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/Gameplay/Blip_C_04_8-Bit_11025Hz.wav using Guid(9ee6fa16d1507404dbad73bc796dd25c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '072e58c3dd32a43fd580f06eaa784f26') in 0.005791 seconds 
-  Import took 0.007143 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000150 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/Gameplay/Blip_C_08_8-Bit_11025Hz.wav
-  artifactKey: Guid(63cf76284fcc3490da472b96e723eb53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/Gameplay/Blip_C_08_8-Bit_11025Hz.wav using Guid(63cf76284fcc3490da472b96e723eb53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7aa3352dd9ab393186921edfc2160cd') in 0.004801 seconds 
-  Import took 0.006019 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000127 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/Gameplay/Boom_C_05_8-Bit_11025Hz.wav
-  artifactKey: Guid(eb8998f3b3d3a49db96a634bf39ed153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/Gameplay/Boom_C_05_8-Bit_11025Hz.wav using Guid(eb8998f3b3d3a49db96a634bf39ed153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5e9f11f38fa4c1905dd216d5f724655') in 0.005087 seconds 
-  Import took 0.006483 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000161 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/UI/Click 03_Minimal UI Sounds.wav
-  artifactKey: Guid(a051eff23feab4ee4ad6fb3062150ba7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/UI/Click 03_Minimal UI Sounds.wav using Guid(a051eff23feab4ee4ad6fb3062150ba7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6414665e1f5101eb6895bfdffb504c0a') in 0.004990 seconds 
-  Import took 0.006439 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000138 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/UI/Coarse Click_Minimal UI Sounds.wav
-  artifactKey: Guid(4e3603de7732b4cd9ba7bc643cd59c99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/UI/Coarse Click_Minimal UI Sounds.wav using Guid(4e3603de7732b4cd9ba7bc643cd59c99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '155c0832c225a7467644741467b7e1b0') in 0.005592 seconds 
-  Import took 0.007064 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000130 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/UI/Clack_Minimal UI Sounds.wav
-  artifactKey: Guid(c33b0c5db5b354f099e05fa30b4605e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/UI/Clack_Minimal UI Sounds.wav using Guid(c33b0c5db5b354f099e05fa30b4605e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c91a6d74b4b7d56f0e02de007dd8a4b') in 0.005315 seconds 
-  Import took 0.006904 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000140 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/Gameplay/Blip_C_09_8-Bit_11025Hz.wav
-  artifactKey: Guid(37549b8b11fe14a5faf0e30d4a97f159) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/Gameplay/Blip_C_09_8-Bit_11025Hz.wav using Guid(37549b8b11fe14a5faf0e30d4a97f159) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c65a5c8a8c276f508b983199239f9e36') in 0.005094 seconds 
-  Import took 0.006302 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000131 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/UI/Click 04_Minimal UI Sounds.wav
-  artifactKey: Guid(270b3ccc2ae83498faa7d1166b4a85b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/UI/Click 04_Minimal UI Sounds.wav using Guid(270b3ccc2ae83498faa7d1166b4a85b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b3d3caeaa7995a6fd99bbc373e01ac1') in 0.005156 seconds 
-  Import took 0.006734 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000155 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/UI/Click 02_Minimal UI Sounds.wav
-  artifactKey: Guid(d04cbba9bbc6348ee871b50836a12812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/UI/Click 02_Minimal UI Sounds.wav using Guid(d04cbba9bbc6348ee871b50836a12812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e3ae024ec5e9dc7d835636544e3bf6b') in 0.005269 seconds 
-  Import took 0.006602 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000132 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/Gameplay/Boom_C_03_8-Bit_11025Hz.wav
-  artifactKey: Guid(f479efddb5f7647338aacc9397bd395e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/Gameplay/Boom_C_03_8-Bit_11025Hz.wav using Guid(f479efddb5f7647338aacc9397bd395e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5389daf0df578e1ff97fbad43d0c8635') in 0.004718 seconds 
-  Import took 0.005951 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000130 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/Gameplay/Boom_C_04_8-Bit_11025Hz.wav
-  artifactKey: Guid(9c87f285d32fa4569b77ddf3a7e6df5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/Gameplay/Boom_C_04_8-Bit_11025Hz.wav using Guid(9c87f285d32fa4569b77ddf3a7e6df5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab3dd899ac4a03814b52c7d1ca0e3344') in 0.005674 seconds 
-  Import took 0.007006 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004258 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/Gameplay/Boom_C_04_8-Bit_11025Hz.wav
-  artifactKey: Guid(9c87f285d32fa4569b77ddf3a7e6df5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/Gameplay/Boom_C_04_8-Bit_11025Hz.wav using Guid(9c87f285d32fa4569b77ddf3a7e6df5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab3dd899ac4a03814b52c7d1ca0e3344') in 0.004254 seconds 
-  Import took 0.005698 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.814499 seconds.
-  path: Assets/Course Library/Audio/Music/cron_audio_8-bit_modern02.ogg
-  artifactKey: Guid(aac0a360368e94c72808af3c16befc8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Music/cron_audio_8-bit_modern02.ogg using Guid(aac0a360368e94c72808af3c16befc8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bd147a7d88456adcf7bae6aa0a3f447') in 0.007241 seconds 
-  Import took 0.009043 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000148 seconds.
-  path: Assets/Course Library/Audio/Music/cron_audio_8-bit_retro02.ogg
-  artifactKey: Guid(c7e60bab38a9b49609a5f27296676b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Music/cron_audio_8-bit_retro02.ogg using Guid(c7e60bab38a9b49609a5f27296676b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef7eb088c15a77fe1312bd65145c56d4') in 0.005165 seconds 
-  Import took 0.006645 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000123 seconds.
-  path: Assets/Course Library/Audio/Music/cron_audio_8-bit_modern03.ogg
-  artifactKey: Guid(6a18b0f0ad4184306ab380a48ebc3832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Music/cron_audio_8-bit_modern03.ogg using Guid(6a18b0f0ad4184306ab380a48ebc3832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a077cf81087c19d0c901c4d4703b003') in 0.009252 seconds 
-  Import took 0.010860 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000140 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/UI/Funny Click_Minimal UI Sounds.wav
-  artifactKey: Guid(c053c3d2a711144dcb83ba80730f20a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/UI/Funny Click_Minimal UI Sounds.wav using Guid(c053c3d2a711144dcb83ba80730f20a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfa3062ed658ddf9cc720a915c1c5c92') in 0.006441 seconds 
-  Import took 0.008113 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000150 seconds.
-  path: Assets/Course Library/Audio/Music/cron_audio_8-bit_retro01.ogg
-  artifactKey: Guid(0d60be2280dc244908dd843c81666b11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Music/cron_audio_8-bit_retro01.ogg using Guid(0d60be2280dc244908dd843c81666b11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab49168f7f945359d0125dadb93b4e3b') in 0.005835 seconds 
-  Import took 0.007281 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.040040 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/Gameplay/Hurt_C_01_8-Bit_11025Hz.wav
-  artifactKey: Guid(7c2de8e149d8346748fb31ed14cc7986) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/Gameplay/Hurt_C_01_8-Bit_11025Hz.wav using Guid(7c2de8e149d8346748fb31ed14cc7986) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6f1205ce17c632c6513786d15914252') in 0.009290 seconds 
-  Import took 0.011015 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000153 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/Gameplay/Hurt_C_02_8-Bit_11025Hz.wav
-  artifactKey: Guid(10bcc8db66ee64c21901ab11ce282dea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/Gameplay/Hurt_C_02_8-Bit_11025Hz.wav using Guid(10bcc8db66ee64c21901ab11ce282dea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f485bf358d017e205e5661090b484ce') in 0.005023 seconds 
-  Import took 0.006676 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000130 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/Gameplay/Hurt_C_04_8-Bit_11025Hz.wav
-  artifactKey: Guid(95fd0f6e4593b4e09b3d513839039d96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/Gameplay/Hurt_C_04_8-Bit_11025Hz.wav using Guid(95fd0f6e4593b4e09b3d513839039d96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69f3245ebe95838f89a9f8d5329972bd') in 0.011205 seconds 
-  Import took 0.012926 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000136 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/Gameplay/Hurt_C_05_8-Bit_11025Hz.wav
-  artifactKey: Guid(6148a3565030f4ad4bf1d52a57fc3c7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/Gameplay/Hurt_C_05_8-Bit_11025Hz.wav using Guid(6148a3565030f4ad4bf1d52a57fc3c7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a50df45d65d1fd769a773495c7c7535') in 0.006931 seconds 
-  Import took 0.008378 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000153 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/Gameplay/Hurt_C_03_8-Bit_11025Hz.wav
-  artifactKey: Guid(c48a2cb005c3740479e41b9df734b2ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/Gameplay/Hurt_C_03_8-Bit_11025Hz.wav using Guid(c48a2cb005c3740479e41b9df734b2ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9ad6c302e23aa2d1cf034d87f799ceb') in 0.005721 seconds 
-  Import took 0.007106 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.986183 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/Gameplay/Hurt_C_06_8-Bit_11025Hz.wav
-  artifactKey: Guid(7ec5ecf96d2fd4aae950ead923cf9ca0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/Gameplay/Hurt_C_06_8-Bit_11025Hz.wav using Guid(7ec5ecf96d2fd4aae950ead923cf9ca0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c12be2c272dfe14f922af8dead00a87') in 0.005725 seconds 
-  Import took 0.007534 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000147 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/Gameplay/Hurt_C_09_8-Bit_11025Hz.wav
-  artifactKey: Guid(430a890fb607d471db897c36240711fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/Gameplay/Hurt_C_09_8-Bit_11025Hz.wav using Guid(430a890fb607d471db897c36240711fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a49efe83dd154901a35cfd6a19ea38bc') in 0.005461 seconds 
-  Import took 0.006801 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000133 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/Gameplay/Hurt_C_08_8-Bit_11025Hz.wav
-  artifactKey: Guid(2662a34448ad7451dbb0fcc4c936754a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/Gameplay/Hurt_C_08_8-Bit_11025Hz.wav using Guid(2662a34448ad7451dbb0fcc4c936754a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '381a6adf3b271aed9ce91ed45de9e5bf') in 0.005214 seconds 
-  Import took 0.006521 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000143 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/Gameplay/Hurt_C_07_8-Bit_11025Hz.wav
-  artifactKey: Guid(07f1ca4d96bca46dbbaa5f4483f7a48a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/Gameplay/Hurt_C_07_8-Bit_11025Hz.wav using Guid(07f1ca4d96bca46dbbaa5f4483f7a48a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0367b3f0764ed8dd0f056140b031b8d5') in 0.008218 seconds 
-  Import took 0.009746 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000139 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/Gameplay/Loading 01_8-Bit_11025Hz.wav
-  artifactKey: Guid(256e94d7cc7d148fc9da89570896ac37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/Gameplay/Loading 01_8-Bit_11025Hz.wav using Guid(256e94d7cc7d148fc9da89570896ac37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc2f99d5c0bacfef0318d497478b3daa') in 0.006520 seconds 
-  Import took 0.007912 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.407280 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/Gameplay/Loading 02_8-Bit_11025Hz.wav
-  artifactKey: Guid(15d7c727e8b9d4d909758851d8cc7cac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/Gameplay/Loading 02_8-Bit_11025Hz.wav using Guid(15d7c727e8b9d4d909758851d8cc7cac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c591d4ff995814f4a89cf94bca784c1') in 0.005823 seconds 
-  Import took 0.007424 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000130 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/UI/Ping_Minimal UI Sounds.wav
-  artifactKey: Guid(b9f0c283bed9b4ce29f3ba7ca4c2edc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/UI/Ping_Minimal UI Sounds.wav using Guid(b9f0c283bed9b4ce29f3ba7ca4c2edc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c458ad1d8cbca258c18bef8f10804715') in 0.005601 seconds 
-  Import took 0.007069 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000140 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/Gameplay/Loading 04_8-Bit_11025Hz.wav
-  artifactKey: Guid(55643213d634c46c3bfb79c8289a6c29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/Gameplay/Loading 04_8-Bit_11025Hz.wav using Guid(55643213d634c46c3bfb79c8289a6c29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2369780cf09a52586747a2c29e980d24') in 0.008699 seconds 
-  Import took 0.009978 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000141 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/Gameplay/Loading 03_8-Bit_11025Hz.wav
-  artifactKey: Guid(89a28b51a44df4bf18817cf9641602be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/Gameplay/Loading 03_8-Bit_11025Hz.wav using Guid(89a28b51a44df4bf18817cf9641602be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abb035114ce3e43becaf0ab5e95303bc') in 0.028624 seconds 
-  Import took 0.030224 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000152 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/Gameplay/Powering down 01_8-Bit_11025Hz.wav
-  artifactKey: Guid(1184ee5b499594b22a5fd39511f52f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/Gameplay/Powering down 01_8-Bit_11025Hz.wav using Guid(1184ee5b499594b22a5fd39511f52f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c13974b291a8c29878b9642b29756140') in 0.006438 seconds 
-  Import took 0.007912 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.045259 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/Gameplay/Sensor 01_8-Bit_11025Hz.wav
-  artifactKey: Guid(defa821b9870a4f3daf2db62ae1a43f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/Gameplay/Sensor 01_8-Bit_11025Hz.wav using Guid(defa821b9870a4f3daf2db62ae1a43f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3df1c3ab6add27f5aecf8bf87feb3831') in 0.011268 seconds 
-  Import took 0.013088 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000158 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/UI/Tiny Click_Minimal UI Sounds.wav
-  artifactKey: Guid(abca7b6d2197d4b31a1269c2d331bbd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/UI/Tiny Click_Minimal UI Sounds.wav using Guid(abca7b6d2197d4b31a1269c2d331bbd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da3a80a385209ead4fd01d08ccf009e1') in 0.005612 seconds 
-  Import took 0.007165 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000165 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/Gameplay/Sensor 02_8-Bit_11025Hz.wav
-  artifactKey: Guid(6563800e1713440c4b57941d04899f5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/Gameplay/Sensor 02_8-Bit_11025Hz.wav using Guid(6563800e1713440c4b57941d04899f5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1068dac8532cf0b8400b91809aaf9b25') in 0.014050 seconds 
-  Import took 0.015469 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000156 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/Gameplay/Zap_C_01_8-Bit_11025Hz.wav
-  artifactKey: Guid(dc028d92bd81f4023ae9b67676dad909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/Gameplay/Zap_C_01_8-Bit_11025Hz.wav using Guid(dc028d92bd81f4023ae9b67676dad909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9add1c8e904be225b2e6e30e3051d35e') in 0.016276 seconds 
-  Import took 0.018038 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000156 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/UI/Spacey Click_Minimal UI Sounds.wav
-  artifactKey: Guid(da87512076eb14593b04fb7e58cad6b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/UI/Spacey Click_Minimal UI Sounds.wav using Guid(da87512076eb14593b04fb7e58cad6b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b22f78fb40caa8e1a0266224d301a5c') in 0.005077 seconds 
-  Import took 0.006460 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 39.469532 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/Gameplay/Zap_C_02_8-Bit_11025Hz.wav
-  artifactKey: Guid(31fce46de4adb42a9904d8d68bde62f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/Gameplay/Zap_C_02_8-Bit_11025Hz.wav using Guid(31fce46de4adb42a9904d8d68bde62f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ef6017fa266d02987a81a38a2a06f90') in 0.005819 seconds 
-  Import took 0.007913 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000212 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/Gameplay/Zap_C_02_8-Bit_11025Hz.wav
-  artifactKey: Guid(31fce46de4adb42a9904d8d68bde62f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/Gameplay/Zap_C_02_8-Bit_11025Hz.wav using Guid(31fce46de4adb42a9904d8d68bde62f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ef6017fa266d02987a81a38a2a06f90') in 0.004700 seconds 
-  Import took 0.006020 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.466940 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/Gameplay/Zap_C_04_8-Bit_11025Hz.wav
-  artifactKey: Guid(18d4210d0f2554e3cad29a15c383c222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/Gameplay/Zap_C_04_8-Bit_11025Hz.wav using Guid(18d4210d0f2554e3cad29a15c383c222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3865560d98fb7334bf270a8d2b20feeb') in 0.005191 seconds 
-  Import took 0.006923 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000277 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/Gameplay/Zap_C_04_8-Bit_11025Hz.wav
-  artifactKey: Guid(18d4210d0f2554e3cad29a15c383c222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/Gameplay/Zap_C_04_8-Bit_11025Hz.wav using Guid(18d4210d0f2554e3cad29a15c383c222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3865560d98fb7334bf270a8d2b20feeb') in 0.006232 seconds 
-  Import took 0.007788 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.490581 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/Gameplay/Zap_C_08_8-Bit_11025Hz.wav
-  artifactKey: Guid(97bce64899c904e64aeb37ca4fffa4b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/Gameplay/Zap_C_08_8-Bit_11025Hz.wav using Guid(97bce64899c904e64aeb37ca4fffa4b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bee61baa36c1230053f95e083b5de277') in 0.005250 seconds 
-  Import took 0.007123 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000191 seconds.
-  path: Assets/Course Library/Audio/Sound Effects/Gameplay/Zap_C_08_8-Bit_11025Hz.wav
-  artifactKey: Guid(97bce64899c904e64aeb37ca4fffa4b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/Audio/Sound Effects/Gameplay/Zap_C_08_8-Bit_11025Hz.wav using Guid(97bce64899c904e64aeb37ca4fffa4b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bee61baa36c1230053f95e083b5de277') in 0.004388 seconds 
-  Import took 0.006027 seconds .
+  Time since last request: 0.000589 seconds.
+  path: Assets/Scripts/PlayerController.cs
+  artifactKey: Guid(5e3c424c9af29df4e8c6aec592794de4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerController.cs using Guid(5e3c424c9af29df4e8c6aec592794de4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a9b7fe02fdc9eab84ff4467a7a7a045') in 0.001291 seconds 
+  Import took 0.002476 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003479 seconds.
+Registered in 0.003162 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.664 seconds
+- Completed reload, in  0.628 seconds
 Domain Reload Profiling:
-	ReloadAssembly (664ms)
-		BeginReloadAssembly (93ms)
+	ReloadAssembly (629ms)
+		BeginReloadAssembly (90ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (23ms)
-		EndReloadAssembly (522ms)
-			LoadAssemblies (64ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (499ms)
+			LoadAssemblies (57ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (154ms)
+			SetupTypeCache (148ms)
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (21ms)
-			SetupLoadedEditorAssemblies (228ms)
+			SetupLoadedEditorAssemblies (224ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
 				BeforeProcessingInitializeOnLoad (47ms)
-				ProcessInitializeOnLoadAttributes (168ms)
+				ProcessInitializeOnLoadAttributes (165ms)
 				ProcessInitializeOnLoadMethodAttributes (2ms)
 				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1399 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 71.5 MB.
-System memory in use after: 71.6 MB.
+System memory in use before: 68.3 MB.
+System memory in use after: 68.4 MB.
 
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1869.
-Total: 2.127400 ms (FindLiveObjects: 0.141300 ms CreateObjectMapping: 0.027400 ms MarkObjects: 1.941800 ms  DeleteObjects: 0.016100 ms)
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1860.
+Total: 2.060600 ms (FindLiveObjects: 0.119200 ms CreateObjectMapping: 0.028900 ms MarkObjects: 1.897200 ms  DeleteObjects: 0.014400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -647,26 +215,26 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003286 seconds.
+Registered in 0.003211 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.627 seconds
+- Completed reload, in  0.626 seconds
 Domain Reload Profiling:
 	ReloadAssembly (627ms)
-		BeginReloadAssembly (78ms)
+		BeginReloadAssembly (80ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (22ms)
-		EndReloadAssembly (510ms)
-			LoadAssemblies (57ms)
+		EndReloadAssembly (507ms)
+			LoadAssemblies (60ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (152ms)
+			SetupTypeCache (148ms)
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (21ms)
 			SetupLoadedEditorAssemblies (226ms)
@@ -674,22 +242,144 @@ Domain Reload Profiling:
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (46ms)
-				ProcessInitializeOnLoadAttributes (168ms)
+				BeforeProcessingInitializeOnLoad (47ms)
+				ProcessInitializeOnLoadAttributes (167ms)
 				ProcessInitializeOnLoadMethodAttributes (2ms)
 				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1399 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 71.5 MB.
-System memory in use after: 71.6 MB.
+System memory in use before: 68.3 MB.
+System memory in use after: 68.4 MB.
 
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1871.
-Total: 2.133000 ms (FindLiveObjects: 0.100500 ms CreateObjectMapping: 0.029400 ms MarkObjects: 1.989700 ms  DeleteObjects: 0.012500 ms)
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1862.
+Total: 2.380700 ms (FindLiveObjects: 0.134600 ms CreateObjectMapping: 0.038100 ms MarkObjects: 2.189500 ms  DeleteObjects: 0.017800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 10441.284644 seconds.
+  path: Assets/Scripts/PowerupBehaviour.cs
+  artifactKey: Guid(773501743327cfa4a839aec1cfedb1c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PowerupBehaviour.cs using Guid(773501743327cfa4a839aec1cfedb1c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6940bbc645cc1af68db5e9861dac3dcc') in 0.003608 seconds 
+  Import took 0.005371 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002981 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.650 seconds
+Domain Reload Profiling:
+	ReloadAssembly (651ms)
+		BeginReloadAssembly (90ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (520ms)
+			LoadAssemblies (56ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (160ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (21ms)
+			SetupLoadedEditorAssemblies (231ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (49ms)
+				ProcessInitializeOnLoadAttributes (169ms)
+				ProcessInitializeOnLoadMethodAttributes (2ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.37 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1399 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 68.3 MB.
+System memory in use after: 68.4 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1864.
+Total: 2.103700 ms (FindLiveObjects: 0.120300 ms CreateObjectMapping: 0.028300 ms MarkObjects: 1.942000 ms  DeleteObjects: 0.012400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003219 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.671 seconds
+Domain Reload Profiling:
+	ReloadAssembly (671ms)
+		BeginReloadAssembly (84ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (510ms)
+			LoadAssemblies (60ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (149ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (21ms)
+			SetupLoadedEditorAssemblies (227ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (47ms)
+				ProcessInitializeOnLoadAttributes (168ms)
+				ProcessInitializeOnLoadMethodAttributes (2ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1399 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 68.3 MB.
+System memory in use after: 68.4 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1866.
+Total: 2.307900 ms (FindLiveObjects: 0.121500 ms CreateObjectMapping: 0.032500 ms MarkObjects: 2.140700 ms  DeleteObjects: 0.012600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
