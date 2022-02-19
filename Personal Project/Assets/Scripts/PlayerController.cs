@@ -138,7 +138,8 @@ public class PlayerController : MonoBehaviour
     {
         if (other.CompareTag("Powerup"))
         {
-            gameManager.UpdateShield(40);
+            PowerupBehaviour powerupBehaviour = other.GetComponent<PowerupBehaviour>();
+            gameManager.UpdateShield(powerupBehaviour.shieldValue);
             // Here play powerup touched sound
             Debug.Log("Player has Powerup");
             Destroy(other.gameObject);
