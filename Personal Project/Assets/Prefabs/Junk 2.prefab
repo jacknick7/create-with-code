@@ -62,7 +62,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 120
+  m_Constraints: 72
   m_CollisionDetection: 0
 --- !u!114 &3279224107142678483
 MonoBehaviour:
@@ -71,7 +71,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3279224107142678486}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bf1cb67d758afc94fb3aa215100af086, type: 3}
   m_Name: 
@@ -90,6 +90,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfcc32c433d087d47a97b1629a3c595a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitValue: 0
+  scoreValue: 0
+  minSpeed: 1
+  maxSpeed: 6
+  minTorque: 1
+  maxTorque: 6
 --- !u!1001 &1636076733436558605
 PrefabInstance:
   m_ObjectHideFlags: 0
