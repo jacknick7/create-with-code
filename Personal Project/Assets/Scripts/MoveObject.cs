@@ -4,26 +4,64 @@ using UnityEngine;
 
 public class MoveObject : MonoBehaviour
 {
-    public float horizontalSpeed = 5.0f;
-    public float verticalSpeed = 5.0f;
+    public float minSpeed = 1.0f;
+    public float maxSpeed = 6.0f;
 
+    public float minHorizontalTorque = 1.0f;
+    public float maxHorizontalTorque = 6.0f;
+    public float minVerticalTorque = 1.0f;
+    public float maxVerticalTorque = 6.0f;
+
+    // This should not be hardcoded, ask to GameManager or find how to get bounds from camera
     private float xBound = 16.0f;
     private float yBound = 7.0f;
 
     private Rigidbody objectRb;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         objectRb = GetComponent<Rigidbody>();
-        objectRb.velocity = new Vector3(horizontalSpeed, verticalSpeed, 0);
+        DefineSetVelocity();
+        DefineSetTorque();
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
+    {
+        DestroyOutOfBounds();
+    }
+
+    private void DefineSetVelocity()
+    {
+        Vector3 direction;
+        if (gameObject.CompareTag("Junk"))
+        {
+            Vector3 finalPos = new Vector3(-xBound, Random.Range(-yBound, yBound), transform.position.z);
+            direction = (finalPos - transform.position).normalized;
+        }
+        else direction = Vector3.left;  // we enter the else if gameObject has tag Powerup
+        float speed = Random.Range(minSpeed, maxSpeed);
+        objectRb.velocity = direction * speed;
+    }
+
+    private void DefineSetTorque()
+    {
+        float horizontalTorque = Random.Range(minHorizontalTorque, maxHorizontalTorque);
+        objectRb.AddTorque(Vector3.up * horizontalTorque, ForceMode.Impulse);
+
+        if (!gameObject.CompareTag("Powerup"))
+        {
+            float verticalTorque = Random.Range(minVerticalTorque, maxVerticalTorque);
+            objectRb.AddTorque(Vector3.right * verticalTorque, ForceMode.Impulse);
+        }
+    }
+
+    private void DestroyOutOfBounds()
     {
         if (transform.position.x < -xBound || transform.position.x > xBound || transform.position.y < -yBound || transform.position.y > yBound)
         {
+            // if gameObject has tag Junk, here substract junkScore to score 
             Destroy(gameObject);
         }
     }
