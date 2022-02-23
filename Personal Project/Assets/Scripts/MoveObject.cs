@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class MoveObject : MonoBehaviour
 {
-    public float minSpeed = 1.0f;
-    public float maxSpeed = 6.0f;
+    [SerializeField] private float minSpeed; // = 1.0f;
+    [SerializeField] private float maxSpeed; // = 6.0f;
 
-    public float minHorizontalTorque = 1.0f;
-    public float maxHorizontalTorque = 6.0f;
-    public float minVerticalTorque = 1.0f;
-    public float maxVerticalTorque = 6.0f;
+    [SerializeField] private float minHorizontalTorque; // = 1.0f;
+    [SerializeField] private float maxHorizontalTorque; // = 6.0f;
+    [SerializeField] private float minVerticalTorque; // = 1.0f;
+    [SerializeField] private float maxVerticalTorque; // = 6.0f;
 
     // This should not be hardcoded, ask to GameManager or find how to get bounds from camera
     private float xBound = 16.0f;
@@ -40,6 +40,7 @@ public class MoveObject : MonoBehaviour
             Vector3 finalPos = new Vector3(-xBound, Random.Range(-yBound, yBound), transform.position.z);
             direction = (finalPos - transform.position).normalized;
         }
+        else if (gameObject.CompareTag("Bullet")) direction = Vector3.right;
         else direction = Vector3.left;  // we enter the else if gameObject has tag Powerup
         float speed = Random.Range(minSpeed, maxSpeed);
         objectRb.velocity = direction * speed;
@@ -50,11 +51,8 @@ public class MoveObject : MonoBehaviour
         float horizontalTorque = Random.Range(minHorizontalTorque, maxHorizontalTorque);
         objectRb.AddTorque(Vector3.up * horizontalTorque, ForceMode.Impulse);
 
-        if (!gameObject.CompareTag("Powerup"))
-        {
-            float verticalTorque = Random.Range(minVerticalTorque, maxVerticalTorque);
-            objectRb.AddTorque(Vector3.right * verticalTorque, ForceMode.Impulse);
-        }
+        float verticalTorque = Random.Range(minVerticalTorque, maxVerticalTorque);
+        objectRb.AddTorque(Vector3.right * verticalTorque, ForceMode.Impulse);
     }
 
     private void DestroyOutOfBounds()
