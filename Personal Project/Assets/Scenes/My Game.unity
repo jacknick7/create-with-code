@@ -4340,7 +4340,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Score:'
+  m_text: 'SCORE:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f0bfb73449e8943d0a0d1efb2290352e, type: 2}
   m_sharedMaterial: {fileID: 21976234817437650, guid: f0bfb73449e8943d0a0d1efb2290352e, type: 2}
@@ -4619,7 +4619,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Shield:'
+  m_text: 'SHIELD:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f0bfb73449e8943d0a0d1efb2290352e, type: 2}
   m_sharedMaterial: {fileID: 21976234817437650, guid: f0bfb73449e8943d0a0d1efb2290352e, type: 2}

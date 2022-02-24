@@ -83,19 +83,19 @@ public class GameManager : MonoBehaviour
         Application.Quit();
     }
 
-    private void UpdateScore(int scoreToAdd)
+    public void UpdateScore(int scoreToAdd)
     {
         score += scoreToAdd;
-        scoreText.SetText("Score: " + score);
+        scoreText.SetText("SCORE: " + score);
     }
 
     public void UpdateShield(int shieldToAdd)
     {
         shield = Mathf.Min(shield + shieldToAdd, MAX_SHIELD);
-        shieldText.SetText("Shield: " + shield + '%');
+        shieldText.SetText("SHIELD: " + shield + '%');
         if (shield < 0)
         {
-            shieldText.SetText("Shield: --");
+            shieldText.SetText("SHIELD: --");
             GameOver();
         }
     }

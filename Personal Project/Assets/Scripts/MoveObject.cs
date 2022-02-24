@@ -41,7 +41,7 @@ public class MoveObject : MonoBehaviour
             direction = (finalPos - transform.position).normalized;
         }
         else if (gameObject.CompareTag("Bullet")) direction = Vector3.right;
-        else direction = Vector3.left;  // we enter the else if gameObject has tag Powerup
+        else direction = Vector3.left;  // else means that gameObject has tag Powerup
         float speed = Random.Range(minSpeed, maxSpeed);
         objectRb.velocity = direction * speed;
     }

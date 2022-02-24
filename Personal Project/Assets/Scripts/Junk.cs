@@ -11,10 +11,13 @@ public class Junk : MonoBehaviour
     // Assing this in start + add score when necesary
     private GameManager gameManager;
 
+    private AudioSource destroySound;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        destroySound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -38,7 +41,9 @@ public class Junk : MonoBehaviour
         // Here add desintegration effect shader (stronger effect as Junk has less health?)
         if (health == 0)
         {
-            // Here add total desintegration effect and play score sound and add Junk score to current score
+            // Here add total desintegration effect and play score sound
+            gameManager.UpdateScore(score);
+            destroySound.Play();
             Destroy(gameObject, 0.2f);
         }
     }
