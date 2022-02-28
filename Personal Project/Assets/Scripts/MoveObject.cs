@@ -59,8 +59,15 @@ public class MoveObject : MonoBehaviour
     {
         if (transform.position.x < -xBound || transform.position.x > xBound || transform.position.y < -yBound || transform.position.y > yBound)
         {
-            // if gameObject has tag Junk, here substract junkScore to score 
-            Destroy(gameObject);
+            if (gameObject.CompareTag("Junk"))
+            {
+                // add a bool var to junk so Escape isn't called 100 times before beeing destroyed
+                gameObject.GetComponent<Junk>().Escape();
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
         }
     }
 

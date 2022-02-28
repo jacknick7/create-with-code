@@ -6,18 +6,20 @@ public class Junk : MonoBehaviour
 {
     [SerializeField] private int health;
     [SerializeField] private int damage;
-    [SerializeField] private int score;
+    [SerializeField] private int disintegrationScore;
+    private int escapeScore;
 
-    // Assing this in start + add score when necesary
     private GameManager gameManager;
 
-    private AudioSource destroySound;
+    private AudioSource destroyAudioSource;
+    [SerializeField] private AudioClip escapeAudioClip;
 
     // Start is called before the first frame update
     void Start()
     {
+        escapeScore = -disintegrationScore / 2;
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
-        destroySound = GetComponent<AudioSource>();
+        destroyAudioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -31,21 +33,37 @@ public class Junk : MonoBehaviour
         if (other.gameObject.CompareTag("Bullet"))
         {
             Destroy(other.gameObject);
-            Hit();
+            CollisionWithBullet();
         }
     }
 
-    private void Hit()
+    private void CollisionWithBullet()
     {
         health--;
-        // Here add desintegration effect shader (stronger effect as Junk has less health?)
         if (health == 0)
         {
-            // Here add total desintegration effect and play score sound
-            gameManager.UpdateScore(score);
-            destroySound.Play();
-            Destroy(gameObject, 0.2f);
+            Disintegration();
         }
+        // else
+        // {
+            // Here add desintegration effect shader (stronger effect as Junk has less health?)
+        // }
+    }
+
+    private void Disintegration()
+    {
+        // Here add total desintegration effect and play score sound
+        gameManager.UpdateScore(disintegrationScore);
+        destroyAudioSource.Play();
+        Destroy(gameObject, 0.2f);
+    }
+
+    public void Escape()
+    {
+        gameManager.UpdateScore(escapeScore);
+        destroyAudioSource.clip = escapeAudioClip;
+        destroyAudioSource.Play();
+        Destroy(gameObject, 0.5f);
     }
 }
 

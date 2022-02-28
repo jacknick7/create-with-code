@@ -97,7 +97,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 2
   damage: 30
-  score: 200
+  disintegrationScore: 200
+  escapeAudioClip: {fileID: 8300000, guid: 4a812d476bd234fcdad7cc31ff6e9473, type: 3}
 --- !u!82 &-8737952174617367861
 AudioSource:
   m_ObjectHideFlags: 0
