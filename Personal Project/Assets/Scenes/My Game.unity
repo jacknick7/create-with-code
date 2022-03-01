@@ -5000,6 +5000,7 @@ MonoBehaviour:
   finalScoreText: {fileID: 1223473931}
   gameOverScreen: {fileID: 1188372902}
   playerController: {fileID: 1291287871}
+  effectsVolume: 0.5
 --- !u!4 &1584188642
 Transform:
   m_ObjectHideFlags: 0
