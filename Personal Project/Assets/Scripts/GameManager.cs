@@ -101,4 +101,9 @@ public class GameManager : MonoBehaviour
             GameOver();
         }
     }
+
+    public void SetEffectsVolume(float newEffectsVolume)
+    {
+        effectsVolume = newEffectsVolume;
+    }
 }
