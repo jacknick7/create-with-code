@@ -16,10 +16,14 @@ public class Junk : MonoBehaviour
 
     private AudioSource destroyAudioSource;
     [SerializeField] private AudioClip escapeAudioClip;
+
     private bool isSetToDestroy = false;
+    private float reduceScaleInterval = 5.0f;
+    public Material initialDisintegrationMaterial;
+    public Material disintegrationMaterial;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         escapeScore = -disintegrationScore / 2;
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
@@ -30,9 +34,13 @@ public class Junk : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        if (isSetToDestroy)
+        {
+            float currentReduceScale = reduceScaleInterval * Time.deltaTime;
+            transform.localScale = transform.localScale - new Vector3(currentReduceScale, currentReduceScale, currentReduceScale);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -48,10 +56,7 @@ public class Junk : MonoBehaviour
     {
         health--;
         if (health == 0) Disintegration();
-        // else
-        // {
-            // Here add desintegration effect shader (stronger effect as Junk has less health?)
-        // }
+        else SetMaterial(initialDisintegrationMaterial); // Change material when first hit, this assumes max health is 2
     }
 
     private void Disintegration()
@@ -59,6 +64,8 @@ public class Junk : MonoBehaviour
         // Here add total desintegration effect and play score sound
         isSetToDestroy = true;
         gameManager.UpdateScore(disintegrationScore);
+        gameObject.GetComponent<SphereCollider>().enabled = false;
+        SetMaterial(disintegrationMaterial);
         destroyAudioSource.Play();
         Destroy(gameObject, disintegrationDelayTime);
     }
@@ -73,6 +80,18 @@ public class Junk : MonoBehaviour
             destroyAudioSource.Play();
             Destroy(gameObject, escapeDelayTime);
         }
+    }
+
+    private void SetMaterial(Material mat)
+    {
+        Transform model = gameObject.transform.GetChild(0);
+        // Special case for one of the Junk models with 2 objects 
+        if (model.name == "Glowing Rock Blue 5")
+        {
+            model.GetChild(0).GetComponent<MeshRenderer>().material = mat;
+            model.GetChild(1).GetComponent<MeshRenderer>().material = mat;
+        }
+        else model.GetComponent<MeshRenderer>().material = mat;
     }
 }
 

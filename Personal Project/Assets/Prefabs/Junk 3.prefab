@@ -99,6 +99,8 @@ MonoBehaviour:
   damage: 15
   disintegrationScore: 100
   escapeAudioClip: {fileID: 8300000, guid: 4a812d476bd234fcdad7cc31ff6e9473, type: 3}
+  initialDisintegrationMaterial: {fileID: 2100000, guid: 634fb58737b55464b9f8657e435d5f67, type: 2}
+  disintegrationMaterial: {fileID: 2100000, guid: 08e72e360910e2c4286093318b286949, type: 2}
 --- !u!82 &4753696323823706460
 AudioSource:
   m_ObjectHideFlags: 0

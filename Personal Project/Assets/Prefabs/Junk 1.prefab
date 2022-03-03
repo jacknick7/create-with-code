@@ -99,6 +99,8 @@ MonoBehaviour:
   damage: 30
   disintegrationScore: 200
   escapeAudioClip: {fileID: 8300000, guid: 4a812d476bd234fcdad7cc31ff6e9473, type: 3}
+  initialDisintegrationMaterial: {fileID: 2100000, guid: 634fb58737b55464b9f8657e435d5f67, type: 2}
+  disintegrationMaterial: {fileID: 2100000, guid: 08e72e360910e2c4286093318b286949, type: 2}
 --- !u!82 &7959132147671899327
 AudioSource:
   m_ObjectHideFlags: 0
@@ -262,6 +264,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2348656, guid: f7ae68db1b78ebf4fa8f3728c3da587a, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2348656, guid: f7ae68db1b78ebf4fa8f3728c3da587a, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1e695c0172630ce4c8c57bd5a82e502b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7ae68db1b78ebf4fa8f3728c3da587a, type: 3}
 --- !u!4 &4897551299824611994 stripped
