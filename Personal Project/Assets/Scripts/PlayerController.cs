@@ -134,7 +134,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    /*private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Powerup"))
         {
@@ -144,7 +144,7 @@ public class PlayerController : MonoBehaviour
             Debug.Log("Player has Powerup");
             Destroy(other.gameObject);
         }
-    }
+    }*/
 
     // TODO: give some seconds of invencibility after collision with junk
     private void OnCollisionEnter(Collision collision)
