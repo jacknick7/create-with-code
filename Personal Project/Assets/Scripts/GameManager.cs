@@ -9,10 +9,13 @@ public class GameManager : MonoBehaviour
 
     private int score;
     private int shield;
+    private int lowShield = 30;
+    private int highShield = 60;
     private const int MAX_SHIELD = 150;
 
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private TextMeshProUGUI shieldText;
+    [SerializeField] private Color[] colorShieldText;
     [SerializeField] private GameObject uIScreen;
 
     private bool isGamePaused = false;
@@ -95,6 +98,9 @@ public class GameManager : MonoBehaviour
     {
         shield = Mathf.Min(shield + shieldToAdd, MAX_SHIELD);
         shieldText.SetText("SHIELD: " + shield + '%');
+        if (shield > highShield) shieldText.color = colorShieldText[2];
+        else if (shield <= lowShield) shieldText.color = colorShieldText[0];
+        else shieldText.color = colorShieldText[1];
         if (shield < 0)
         {
             shieldText.SetText("SHIELD: --");
