@@ -15,8 +15,6 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody playerRb;
 
-    [SerializeField] private GameObject bullet;
-    [SerializeField] private GameObject spawnManager;
     private float bulletTimer = 0.0f;
     private const float BULLET_TIME = 0.5f;
     private Vector3 bulletOffset = new Vector3(0.5f, 0, 0.4f);
@@ -27,6 +25,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject explosion;
 
     private GameManager gameManager;
+    private SpawnManager spawnManager;
 
     // Start is called before the first frame update
     private void Start()
@@ -34,6 +33,7 @@ public class PlayerController : MonoBehaviour
         iniPos = transform.position;
         playerRb = GetComponent<Rigidbody>();
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        spawnManager = GameObject.Find("Spawn Manager").GetComponent<SpawnManager>();
         gameObject.SetActive(false);
     }
 
@@ -123,28 +123,15 @@ public class PlayerController : MonoBehaviour
     }
 
     // Shoots a bullet based on space input and a cooldown
-    // TODO: -add the cooldown
     void HandleShooting()
     {
         if (Input.GetKey(KeyCode.Space) && bulletTimer <= 0)
         {
             Debug.Log("Shoot!");
-            Instantiate(bullet, transform.position + bulletOffset, bullet.transform.rotation, spawnManager.transform);
+            spawnManager.SpawnBullet(transform.position + bulletOffset);
             bulletTimer = BULLET_TIME;
         }
     }
-
-    /*private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Powerup"))
-        {
-            PowerupBehaviour powerupBehaviour = other.GetComponent<PowerupBehaviour>();
-            gameManager.UpdateShield(powerupBehaviour.shieldValue);
-            // Here play powerup touched sound
-            Debug.Log("Player has Powerup");
-            Destroy(other.gameObject);
-        }
-    }*/
 
     // TODO: give some seconds of invencibility after collision with junk
     private void OnCollisionEnter(Collision collision)

@@ -6,6 +6,7 @@ public class SpawnManager : MonoBehaviour
 {
     public GameObject[] junk;
     public GameObject powerup;
+    public GameObject bullet;
 
     private float xSpawn = 15.0f;
     private float ySpawnRange = 4.5f;
@@ -14,10 +15,16 @@ public class SpawnManager : MonoBehaviour
     private float junkSpawnTime = 1.5f;
     private float powerupSpawnTime = 1.5f;//75.0f;
 
+    private float minDespawnTime = 0.0f;
+    private float maxDespawnTime = 3.0f;
+
     private GameManager gameManager;
 
+    // 0: bullet, 1: junk, 2: powerup
+    [SerializeField] private GameObject[] containers;
+
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
         InvokeRepeating("SpawnRandomJunk", startDelay, junkSpawnTime);
@@ -25,12 +32,12 @@ public class SpawnManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         
     }
 
-    void SpawnRandomJunk()
+    private void SpawnRandomJunk()
     {
         if (gameManager.isGameActive)
         {
@@ -39,20 +46,40 @@ public class SpawnManager : MonoBehaviour
             float ySpawn = Random.Range(-ySpawnRange, ySpawnRange);
             Vector3 spawnPos = new Vector3(xSpawn, ySpawn, junk[randomIndex].gameObject.transform.position.z);
 
-            Instantiate(junk[randomIndex], spawnPos, junk[randomIndex].gameObject.transform.rotation);
+            Instantiate(junk[randomIndex], spawnPos, junk[randomIndex].gameObject.transform.rotation, containers[1].transform);
             // Change speed values for new instantiate junk here
         }
     }
 
-    void SpawnPowerup()
+    private void SpawnPowerup()
     {
         if (gameManager.isGameActive)
         {
             float ySpawn = Random.Range(-ySpawnRange, ySpawnRange);
             Vector3 spawnPos = new Vector3(xSpawn, ySpawn, powerup.gameObject.transform.position.z);
 
-            Instantiate(powerup, spawnPos, powerup.gameObject.transform.rotation);
+            Instantiate(powerup, spawnPos, powerup.gameObject.transform.rotation, containers[2].transform);
             // Change speed values for new instantiate powerup here
+        }
+    }
+
+    public void SpawnBullet(Vector3 pos)
+    {
+        Instantiate(bullet, pos, bullet.transform.rotation, containers[0].transform);
+    }
+
+    public void DespawnAll()
+    {
+        for(int i = 0; i < containers.Length; i++)
+        {
+            for(int j = 0; j < containers[i].transform.childCount; j++)
+            {
+                GameObject despawn = containers[i].transform.GetChild(j).gameObject;
+                despawn.GetComponent<Rigidbody>().velocity = Vector3.zero;
+
+                float despawnTime = Random.Range(minDespawnTime, maxDespawnTime);
+                Destroy(containers[i].transform.GetChild(j).gameObject, despawnTime);
+            }
         }
     }
 }

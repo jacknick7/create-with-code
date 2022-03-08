@@ -310,7 +310,7 @@ GameObject:
   m_Component:
   - component: {fileID: 132764095}
   m_Layer: 0
-  m_Name: Powerups
+  m_Name: Powerup Container
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -954,6 +954,11 @@ MonoBehaviour:
   - {fileID: 391361968838137340, guid: 2e7f803d397d36145844c8dd3943a254, type: 3}
   - {fileID: 8901645870832668194, guid: 1629ac2bbf8bbf7438daac6c2f2f279b, type: 3}
   powerup: {fileID: 8067656702571765034, guid: a3be84d116f08ee48aa9daacef8d9891, type: 3}
+  bullet: {fileID: 8629962105427522179, guid: 2c5cd33ca7c73c045ae7266776e7958c, type: 3}
+  containers:
+  - {fileID: 1127836007}
+  - {fileID: 1796658167}
+  - {fileID: 132764094}
 --- !u!4 &283137970
 Transform:
   m_ObjectHideFlags: 0
@@ -3720,7 +3725,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1127836008}
   m_Layer: 0
-  m_Name: Bullets
+  m_Name: Bullet Container
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5079,6 +5084,7 @@ MonoBehaviour:
   finalScoreText: {fileID: 1223473931}
   gameOverScreen: {fileID: 1188372902}
   playerController: {fileID: 1291287871}
+  spawnManager: {fileID: 283137969}
   effectsVolume: 0.5
 --- !u!4 &1584188642
 Transform:
@@ -5717,7 +5723,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1796658168}
   m_Layer: 0
-  m_Name: Junk
+  m_Name: Junk Container
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

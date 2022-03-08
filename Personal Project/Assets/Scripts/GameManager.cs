@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject gameOverScreen;
 
     [SerializeField] private PlayerController playerController;
+    [SerializeField] private SpawnManager spawnManager;
 
     public float effectsVolume = 0.5f;
 
@@ -76,6 +77,8 @@ public class GameManager : MonoBehaviour
         // Here change player to explosion + destroy delayed
 
         isGameActive = false;
+
+        spawnManager.DespawnAll();
 
         uIScreen.SetActive(false);
         finalScoreText.SetText("FINAL SCORE: " + score + "pts");
