@@ -5,7 +5,7 @@ using UnityEngine;
 public class Junk : MonoBehaviour
 {
     [SerializeField] private int health;
-    [SerializeField] private int damage;
+    public int damage;
     [SerializeField] private int disintegrationScore;
     private int escapeScore;
 

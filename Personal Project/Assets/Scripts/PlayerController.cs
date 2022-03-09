@@ -21,6 +21,10 @@ public class PlayerController : MonoBehaviour
 
     private Vector3 iniPos;
 
+    private bool isInvincible = false;
+    private const float SHIELD_TIME_MAIN = 2.0f;
+    private const float SHIELD_TIME_LAST = 0.08f;
+
     [SerializeField] private GameObject shield;
     [SerializeField] private GameObject explosion;
 
@@ -133,23 +137,42 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    // TODO: give some seconds of invencibility after collision with junk
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Junk"))
         {
-            // Here decrease player shields, player can choose to sacrifice shields to destroy junk, score is also increased this way
-            // Each Junk will have it's own damage value
-            gameManager.UpdateShield(-30);
             Debug.Log("Player collided with some Junk");
+            // Player can choose to sacrifice shields to destroy junk, ¿score is also increased this way?
+            if (!isInvincible)
+            {
+                StartCoroutine(ShowShield());
+                gameManager.UpdateShield(collision.gameObject.GetComponent<Junk>().damage);
+            }
             Destroy(collision.gameObject);
         }
+    }
+
+    IEnumerator ShowShield()
+    {
+        isInvincible = true;
+        shield.SetActive(true);
+        yield return new WaitForSeconds(SHIELD_TIME_MAIN);
+        shield.SetActive(false);
+        for(int i = 0; i < 3; i++)
+        {
+            yield return new WaitForSeconds(SHIELD_TIME_LAST);
+            shield.SetActive(true);
+            yield return new WaitForSeconds(SHIELD_TIME_LAST);
+            shield.SetActive(false);
+        }
+        isInvincible = false;
     }
 
     public void ResetPlayer()
     {
         transform.position = iniPos;
         playerRb.velocity = Vector3.zero;
+        isInvincible = false;
         shield.SetActive(false);
         explosion.SetActive(false);
         bulletTimer = 0;

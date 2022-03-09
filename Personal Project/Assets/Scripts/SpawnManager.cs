@@ -13,7 +13,7 @@ public class SpawnManager : MonoBehaviour
 
     private float startDelay = 1.0f;
     private float junkSpawnTime = 1.5f;
-    private float powerupSpawnTime = 1.5f;//75.0f;
+    private float powerupSpawnTime = 45.0f;
 
     private float minDespawnTime = 0.0f;
     private float maxDespawnTime = 3.0f;
