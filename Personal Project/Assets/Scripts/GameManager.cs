@@ -78,6 +78,8 @@ public class GameManager : MonoBehaviour
 
         isGameActive = false;
 
+        playerController.Explosion();
+
         spawnManager.DespawnAll();
 
         uIScreen.SetActive(false);

@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
     private const float BULLET_TIME = 0.5f;
     private Vector3 bulletOffset = new Vector3(0.5f, 0, 0.4f);
 
-    private Vector3 iniPos;
+    private Vector3 iniPos = new Vector3(-4, 0, -1);
 
     private bool isInvincible = false;
     private const float SHIELD_TIME_MAIN = 2.0f;
@@ -28,23 +28,27 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject shield;
     [SerializeField] private GameObject explosion;
 
+    private AudioSource shieldAudioSource;
+    private AudioSource explosionAudioSource;
+
     private GameManager gameManager;
     private SpawnManager spawnManager;
 
     // Start is called before the first frame update
     private void Start()
     {
-        iniPos = transform.position;
-        playerRb = GetComponent<Rigidbody>();
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
         spawnManager = GameObject.Find("Spawn Manager").GetComponent<SpawnManager>();
+        playerRb = GetComponent<Rigidbody>();
+        shieldAudioSource = shield.GetComponent<AudioSource>();
+        explosionAudioSource = explosion.GetComponent<AudioSource>();
         gameObject.SetActive(false);
     }
 
     // Update is called once per frame
     private void Update()
     {
-        HandleShooting();
+        if (gameManager.isGameActive) HandleShooting();
 
         if (outOfBoundsTimer > 0)
         {
@@ -63,8 +67,11 @@ public class PlayerController : MonoBehaviour
     // FixedUpdate is used when applying physics-related functions
     private void FixedUpdate()
     {
-        MovePlayer();
-        ConstrainPlayerPosition();
+        if (gameManager.isGameActive)
+        {
+            MovePlayer();
+            ConstrainPlayerPosition();
+        }
     }
 
     // Move the player with forces based on WASD or arrows keys input
@@ -145,8 +152,8 @@ public class PlayerController : MonoBehaviour
             // Player can choose to sacrifice shields to destroy junk, ¿score is also increased this way?
             if (!isInvincible)
             {
-                StartCoroutine(ShowShield());
                 gameManager.UpdateShield(collision.gameObject.GetComponent<Junk>().damage);
+                if (gameManager.isGameActive) StartCoroutine(ShowShield());
             }
             Destroy(collision.gameObject);
         }
@@ -156,6 +163,7 @@ public class PlayerController : MonoBehaviour
     {
         isInvincible = true;
         shield.SetActive(true);
+        shieldAudioSource.Play();
         yield return new WaitForSeconds(SHIELD_TIME_MAIN);
         shield.SetActive(false);
         for(int i = 0; i < 3; i++)
@@ -168,12 +176,28 @@ public class PlayerController : MonoBehaviour
         isInvincible = false;
     }
 
+    public void Explosion()
+    {
+        StartCoroutine(ShowExplosion());
+    }
+
+    IEnumerator ShowExplosion()
+    {
+        playerRb.velocity = Vector3.zero;
+        explosion.SetActive(true);
+        explosionAudioSource.Play();
+        yield return new WaitForSeconds(2);
+        gameObject.SetActive(false);
+    }
+
     public void ResetPlayer()
     {
         transform.position = iniPos;
         playerRb.velocity = Vector3.zero;
         isInvincible = false;
+        shieldAudioSource.volume = gameManager.effectsVolume;
         shield.SetActive(false);
+        explosionAudioSource.volume = gameManager.effectsVolume;
         explosion.SetActive(false);
         bulletTimer = 0;
         outOfBoundsTimer = 0;
