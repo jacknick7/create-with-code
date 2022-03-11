@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody playerRb;
 
     private float bulletTimer = 0.0f;
-    private const float BULLET_TIME = 0.5f;
+    private const float BULLET_TIME = 0.45f;
     private Vector3 bulletOffset = new Vector3(0.5f, 0, 0.4f);
 
     private Vector3 iniPos = new Vector3(-4, 0, -1);

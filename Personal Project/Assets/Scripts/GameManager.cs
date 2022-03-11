@@ -83,7 +83,7 @@ public class GameManager : MonoBehaviour
         spawnManager.DespawnAll();
 
         uIScreen.SetActive(false);
-        finalScoreText.SetText("FINAL SCORE: " + score + "pts");
+        finalScoreText.SetText("SCORE: " + score);
         gameOverScreen.SetActive(true);
     }
 
