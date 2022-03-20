@@ -10,8 +10,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject outOfBoundsText;
     private float outOfBoundsTimer = 0.0f;
     private const float OUTOFBOUNDS_TIME = 2.0f;
-    private float yBound = 5.25f;
-    private float xBound = 14.15f;
 
     private Rigidbody playerRb;
 
@@ -101,6 +99,10 @@ public class PlayerController : MonoBehaviour
         Vector3 newPos = transform.position;
         Vector3 newVel = playerRb.velocity;
 
+        Vector3 screenSize = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
+        float xBound = screenSize.x;
+        float yBound = screenSize.y;
+
         if (transform.position.y < -yBound)
         {
             newPos.y = -yBound;
@@ -141,7 +143,6 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space) && bulletTimer <= 0)
         {
-            Debug.Log("Shoot!");
             spawnManager.SpawnBullet(transform.position + bulletOffset);
             bulletTimer = BULLET_TIME;
         }
@@ -151,7 +152,6 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Junk"))
         {
-            Debug.Log("Player collided with some Junk");
             // Player can choose to sacrifice shields to destroy junk, ¿score is also increased this way?
             if (!isInvincible)
             {
