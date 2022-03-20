@@ -31,6 +31,9 @@ public class PlayerController : MonoBehaviour
     private AudioSource shieldAudioSource;
     private AudioSource explosionAudioSource;
 
+    [SerializeField] private ParticleSystem explosionParticleSystem;
+    private const float EXPLOSION_TIME = 2.0f;
+
     private GameManager gameManager;
     private SpawnManager spawnManager;
 
@@ -186,7 +189,8 @@ public class PlayerController : MonoBehaviour
         playerRb.velocity = Vector3.zero;
         explosion.SetActive(true);
         explosionAudioSource.Play();
-        yield return new WaitForSeconds(2);
+        explosionParticleSystem.Play();
+        yield return new WaitForSeconds(EXPLOSION_TIME);
         gameObject.SetActive(false);
     }
 

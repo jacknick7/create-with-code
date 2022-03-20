@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private PlayerController playerController;
     [SerializeField] private SpawnManager spawnManager;
 
-    public float effectsVolume = 0.5f;
+    public float effectsVolume = 0.75f;
 
     // Start is called before the first frame update
     void Start()

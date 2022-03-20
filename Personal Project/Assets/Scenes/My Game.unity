@@ -257,11 +257,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 56338067}
   m_CullTransparentMesh: 1
---- !u!1 &95268044 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8937644570544884604, guid: eb2a7b3f04e04d3428773cde3eeb6119, type: 3}
-  m_PrefabInstance: {fileID: 804818903498102429}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &97647646
 GameObject:
   m_ObjectHideFlags: 0
@@ -2433,7 +2428,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.5
+  m_Value: 0.75
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -2990,9 +2985,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 55643213d634c46c3bfb79c8289a6c29, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 91a1d6eb837f6744cbd33ddecbfd9270, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -3831,7 +3826,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.5
+  m_Value: 0.25
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -5161,7 +5156,7 @@ MonoBehaviour:
   gameOverScreen: {fileID: 1188372902}
   playerController: {fileID: 1291287871}
   spawnManager: {fileID: 283137969}
-  effectsVolume: 0.5
+  effectsVolume: 0.75
 --- !u!4 &1584188642
 Transform:
   m_ObjectHideFlags: 0
@@ -6606,14 +6601,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 804818902934843841, guid: eb2a7b3f04e04d3428773cde3eeb6119, type: 3}
-      propertyPath: explosion
-      value: 
-      objectReference: {fileID: 95268044}
-    - target: {fileID: 804818902934843841, guid: eb2a7b3f04e04d3428773cde3eeb6119, type: 3}
-      propertyPath: spawnManager
-      value: 
-      objectReference: {fileID: 283137968}
-    - target: {fileID: 804818902934843841, guid: eb2a7b3f04e04d3428773cde3eeb6119, type: 3}
       propertyPath: outOfBoundsText
       value: 
       objectReference: {fileID: 1179198133}
@@ -6664,10 +6651,6 @@ PrefabInstance:
     - target: {fileID: 804818902934843850, guid: eb2a7b3f04e04d3428773cde3eeb6119, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 804818902934843850, guid: eb2a7b3f04e04d3428773cde3eeb6119, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb2a7b3f04e04d3428773cde3eeb6119, type: 3}
