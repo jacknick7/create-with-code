@@ -8,8 +8,10 @@ public class SpawnManager : MonoBehaviour
     public GameObject powerup;
     public GameObject bullet;
 
-    private float xSpawn = 15.0f;
-    private float ySpawnRange = 4.5f;
+    private float xSpawn;
+    private const float X_SPAWN_OFFSET = 1.5f;
+    private float ySpawnRange;
+    private const float Y_SPAWN_OFFSET = -0.5f;
 
     private float startDelay = 1.0f;
     private float junkSpawnTime = 1.5f;
@@ -26,6 +28,9 @@ public class SpawnManager : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
+        Vector3 screenSize = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
+        xSpawn = screenSize.x + X_SPAWN_OFFSET;
+        ySpawnRange = screenSize.y + Y_SPAWN_OFFSET;
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
         InvokeRepeating("SpawnRandomJunk", startDelay, junkSpawnTime);
         InvokeRepeating("SpawnPowerup", startDelay, powerupSpawnTime);

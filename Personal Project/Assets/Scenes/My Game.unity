@@ -3137,8 +3137,8 @@ MonoBehaviour:
 
 
     USING ASSETS FROM
-    ''LEARN UNITY'', ''DYNAMIC SPACE BACKGROUND LITE'', ''FREE SF FIGHTER'', ''LOW
-    POLY SPACE ROCKS'' AND WITH ''SPACE MTV'' BY KOMIKU AS BGM'
+    ''LEARN UNITY'', ''DYNAMIC SPACE BACKGROUND LITE'', ''FREE SF FIGHTER'' AND ''LOW
+    POLY SPACE ROCKS'' AND WITH ''SPACE MTV'' BY KOMIKU AS THE BGM'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f0bfb73449e8943d0a0d1efb2290352e, type: 2}
   m_sharedMaterial: {fileID: 21976234817437650, guid: f0bfb73449e8943d0a0d1efb2290352e, type: 2}
@@ -4392,7 +4392,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0.7921569, g: 0.8, b: 0.24705882, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

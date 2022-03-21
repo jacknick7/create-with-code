@@ -13,14 +13,19 @@ public class MoveObject : MonoBehaviour
     [SerializeField] private float maxVerticalTorque; // = 6.0f;
 
     // This should not be hardcoded, ask to GameManager or find how to get bounds from camera
-    private float xBound = 16.0f;
-    private float yBound = 7.0f;
+    private float xBound;
+    private const float X_BOUND_OFFSET = 2.5f;
+    private float yBound;
+    private const float Y_BOUND_OFFSET = 2.0f;
 
     private Rigidbody objectRb;
 
     // Start is called before the first frame update
     private void Start()
     {
+        Vector3 screenSize = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
+        xBound = screenSize.x + X_BOUND_OFFSET;
+        yBound = screenSize.y + Y_BOUND_OFFSET;
         objectRb = GetComponent<Rigidbody>();
         DefineSetVelocity();
         DefineSetTorque();
