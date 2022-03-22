@@ -23,13 +23,14 @@ public class PlayerController : MonoBehaviour
     private const float SHIELD_TIME_MAIN = 2.0f;
     private const float SHIELD_TIME_LAST = 0.08f;
 
+    [SerializeField] private GameObject spaceship;
     [SerializeField] private GameObject shield;
     [SerializeField] private GameObject explosion;
 
     private AudioSource shieldAudioSource;
     private AudioSource explosionAudioSource;
 
-    [SerializeField] private ParticleSystem explosionParticleSystem;
+    private ParticleSystem explosionParticleSystem;
     private const float EXPLOSION_TIME = 2.0f;
 
     private GameManager gameManager;
@@ -43,6 +44,7 @@ public class PlayerController : MonoBehaviour
         playerRb = GetComponent<Rigidbody>();
         shieldAudioSource = shield.GetComponent<AudioSource>();
         explosionAudioSource = explosion.GetComponent<AudioSource>();
+        explosionParticleSystem = explosion.GetComponent<ParticleSystem>();
         gameObject.SetActive(false);
     }
 
@@ -187,6 +189,7 @@ public class PlayerController : MonoBehaviour
     IEnumerator ShowExplosion()
     {
         playerRb.velocity = Vector3.zero;
+        spaceship.SetActive(false);
         explosion.SetActive(true);
         explosionAudioSource.Play();
         explosionParticleSystem.Play();
@@ -198,6 +201,7 @@ public class PlayerController : MonoBehaviour
     {
         transform.position = iniPos;
         playerRb.velocity = Vector3.zero;
+        spaceship.SetActive(true);
         isInvincible = false;
         shieldAudioSource.volume = gameManager.effectsVolume;
         shield.SetActive(false);

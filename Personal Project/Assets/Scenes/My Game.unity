@@ -3132,13 +3132,13 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'A GAME BY BISHOPBIT
 
-
     MADE WITH UNITY 2020.3
 
+    USING ''SPACE MTV''
+    BY KOMIKU AS THE BGM
 
-    USING ASSETS FROM
-    ''LEARN UNITY'', ''DYNAMIC SPACE BACKGROUND LITE'', ''FREE SF FIGHTER'' AND ''LOW
-    POLY SPACE ROCKS'' AND WITH ''SPACE MTV'' BY KOMIKU AS THE BGM'
+    WITH ASSETS FROM ''LEARN UNITY'', ''DYNAMIC SPACE BACKGROUND
+    LITE'', ''FREE SF FIGHTER'' AND ''LOW POLY SPACE ROCKS'''
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f0bfb73449e8943d0a0d1efb2290352e, type: 2}
   m_sharedMaterial: {fileID: 21976234817437650, guid: f0bfb73449e8943d0a0d1efb2290352e, type: 2}
@@ -3179,7 +3179,7 @@ MonoBehaviour:
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
+  m_paragraphSpacing: 50
   m_charWidthMaxAdj: 0
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
